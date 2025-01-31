@@ -1,0 +1,179 @@
+[2025-01-22 12:06:05.360] [info] [P/T: 13612/24144] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:06.041] [info] [P/T: 20892/25512] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:07.877] [info] [P/T: 13612/25292] [CRawFileHintSet::LoadConfig] Load filehint.xml successfully
+[2025-01-22 12:06:07.878] [info] [P/T: 13612/25292] [CRawFileHintSet::CRawFileHintSet] Total file hitnt: 182
+[2025-01-22 12:06:10.287] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::Scan] [CNtfsDelScanOperator] scan start  9527
+[2025-01-22 12:06:10.287] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanEx] start
+[2025-01-22 12:06:10.288] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ReadMainDBR] [CNtfsDelScanOperator::ReadMainDBR] readed buffer: EB52904E544653202020200002080000
+[2025-01-22 12:06:10.288] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::loadDBR] [CNtfsDelScanOperator::loadDBR] Main DBR is found.
+[2025-01-22 12:06:10.289] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::LoadMFTListAndBitMap] [CNtfsDelScanOperator]: LoadMFTListAndBitMap begin
+[2025-01-22 12:06:10.290] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::LoadMFTListAndBitMap] [CheckFileMFT] : tpMFTBuffer info =FILE0 OK
+[2025-01-22 12:06:10.380] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::initMftBitmap] [CNtfsDelScanOperator::initMftBitmap] end
+[2025-01-22 12:06:10.381] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::InitFileExistenceChecker] CNtfsDelScanOperator::InitFileExistenceChecker begin.
+[2025-01-22 12:06:10.381] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::InitFileExistenceChecker]  end.
+[2025-01-22 12:06:10.565] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\AppData\Roaming\.minecraft
+[2025-01-22 12:06:10.567] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\AppData\Roaming\.minecraft\saves
+[2025-01-22 12:06:10.568] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\APPDATA\LocalLow\Palworld
+[2025-01-22 12:06:10.570] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\APPDATA\LocalLow\Palworld\Save
+[2025-01-22 12:06:10.572] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\APPDATA\Local\Pal
+[2025-01-22 12:06:10.575] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\APPDATA\Local\Pal\Saved
+[2025-01-22 12:06:10.577] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\APPDATA\Local\Pal\Saved\SaveGames
+[2025-01-22 12:06:10.578] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\Documents\My Games\Hell Diver\SaveData
+[2025-01-22 12:06:10.580] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\AppData\Roaming\Arrowhead\Helldivers\saves
+[2025-01-22 12:06:10.582] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\Documents\Nintendo Switch\save data
+[2025-01-22 12:06:10.584] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\Documents\Anno 1800\accounts
+[2025-01-22 12:06:10.585] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\AppData\Local\Larian Studios\Baldur's Gate 3\PlayerProfiles\Public\Savegames
+[2025-01-22 12:06:10.587] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::collectSpecifiedDir] can not find spec path C:\Users\Max-G\AppData\Roaming\EldenRing
+[2025-01-22 12:06:10.587] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::analyzeUsnJrnl] start to analze usnj
+[2025-01-22 12:06:10.588] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::analyzeUsnJrnl] find usnj id
+[2025-01-22 12:06:10.589] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::analyzeUsnJrnl] find usnj sector pos
+[2025-01-22 12:06:10.589] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::analyzeUsnJrnl] parse usn $j
+[2025-01-22 12:06:10.589] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::analyzeUsnJrnl] reading usn page
+[2025-01-22 12:06:10.696] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::analyzeUsnJrnl] finish analzing usnj, file history nodes: 614
+[2025-01-22 12:06:10.697] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanMFT] start sector: 6291456, start file num: 0, end file num: 204928
+[2025-01-22 12:06:11.462] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::DealMFTByInfo] mft id: 18552 is unsaved files
+[2025-01-22 12:06:11.951] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::DealMFTByInfo] mft id: 37728 is unsaved files
+[2025-01-22 12:06:13.360] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::DealMFTByInfo] mft id: 44052 is unsaved files
+[2025-01-22 12:06:18.812] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanMFT] start sector: 38516824, start file num: 204928, end file num: 451924
+[2025-01-22 12:06:22.680] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanMFT] start sector: 127523072, start file num: 451924, end file num: 779092
+[2025-01-22 12:06:26.544] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanMFT] start sector: 156123328, start file num: 779092, end file num: 926464
+[2025-01-22 12:06:28.939] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanMFT] start sector: 186524016, start file num: 926464, end file num: 1346824
+[2025-01-22 12:06:34.716] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanMFT] start sector: 232668192, start file num: 1346824, end file num: 1518080
+[2025-01-22 12:06:37.005] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanMFT] start sector: 232229856, start file num: 1518080, end file num: 1727744
+[2025-01-22 12:06:40.400] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanLogfileEx] [CNtfsDelScanOperator::ScanLogfileEx] start
+[2025-01-22 12:06:40.400] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanLogfileEx] [] begin get mft bitmap.
+[2025-01-22 12:06:40.422] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::initMftBitmap] [CNtfsDelScanOperator::initMftBitmap] end
+[2025-01-22 12:06:40.423] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanLogfileEx] [] end get mft bitmap.
+[2025-01-22 12:06:40.423] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanLogfileEx] [] begin allocate cacheBuffer
+[2025-01-22 12:06:40.423] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanLogfileEx] [] end allocate cacheBuffer
+[2025-01-22 12:06:40.537] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanLogfileEx] [] end
+[2025-01-22 12:06:40.537] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanEx] [] build file begin
+[2025-01-22 12:06:46.523] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanEx] [] build file end
+[2025-01-22 12:06:46.523] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanEx] [] total find 0 file, 0 from old function, 0 from new function, allocate count 185.
+[2025-01-22 12:06:46.588] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::ScanEx] [] finish.
+[2025-01-22 12:06:46.588] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::~CNtfsDelScanOperator] [CNtfsDelScanOperator] : ~CNtfsDelScanOperator destructor begin
+[2025-01-22 12:06:46.588] [info] [P/T: 13612/25292] [CNtfsDelScanOperator::~CNtfsDelScanOperator] [CNtfsDelScanOperator] : ~CNtfsDelScanOperator destructor end
+[2025-01-22 12:06:48.061] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::Init] CNtfsFormatScanOperator::Init init start
+[2025-01-22 12:06:48.061] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::Init] [CNtfsFormatScanOperator::Init] cluster size: 4096 sector size: 512
+[2025-01-22 12:06:48.061] [error] [P/T: 13612/22988] [CNtfsFormatScanOperator::Init] [CNtfsFormatScanOperator::Init] Secotr Size in ScanParam is different with StorageDevice sector size, 0:512
+[2025-01-22 12:06:48.062] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::GetNTFSInfoFromDBR] [CNtfsFormatScanOperator::GetNTFSInfoFromDBR] spc: 8
+[2025-01-22 12:06:48.236] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::Init] [CNtfsFormatScanOperator::Init] GetNTFSInfoFromDBR ok., sector size: 512, sectors per cluster: 8
+[2025-01-22 12:06:48.237] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::Init] Default builder, id: 6, baseinfo spc: 8
+[2025-01-22 12:06:48.237] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::Init] [CNtfsFormatScanOperator::Init] FormatParam spc: 0
+[2025-01-22 12:06:48.237] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::Init] CNtfsFormatScanOperator::Init init done
+[2025-01-22 12:06:48.237] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] begin, sectorPos: 0
+[2025-01-22 12:06:48.237] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] end, volumeStartOffset: 0, totalCapacity: 510927044096, sectorSize: 512, sectorsPerCluster: 8, mftStartOffset: 3221225472, backupDbrOffset: 510927044096
+[2025-01-22 12:06:48.237] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 16
+[2025-01-22 12:06:48.238] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:06:53.773] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 6291456
+[2025-01-22 12:06:53.775] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::ParseMFTMetaFile] Sector 6291456 is duplicate $MFT.
+[2025-01-22 12:06:53.775] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:06:53.778] [error] [P/T: 13612/22988] [CNtfsFormatScanOperator::AddMFTWithMFTItemBuffer] can not find runlist of $J.
+[2025-01-22 12:07:19.242] [warning] [P/T: 13612/19872] [CFatFormatScanOperator::SaveFolderClusterToMap] [SaveFolderClusterToMap]: the Same keyValue
+[2025-01-22 12:07:42.613] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] begin, sectorPos: 47578064
+[2025-01-22 12:07:42.613] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] end, volumeStartOffset: 24359968768, totalCapacity: 3160576, sectorSize: 512, sectorsPerCluster: 1, mftStartOffset: 24361022464, backupDbrOffset: 24363129344
+[2025-01-22 12:07:42.614] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::findLostPartition] Find a lost partition at sector: 47578064, node id: 9
+[2025-01-22 12:07:42.616] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 47580122
+[2025-01-22 12:07:42.616] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:07:42.616] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 47583226
+[2025-01-22 12:07:42.617] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:07:42.617] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] begin, sectorPos: 47584256
+[2025-01-22 12:07:42.618] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] end, volumeStartOffset: 24363139072, totalCapacity: 3160576, sectorSize: 512, sectorsPerCluster: 1, mftStartOffset: 24364192768, backupDbrOffset: 24366299648
+[2025-01-22 12:07:42.618] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::findLostPartition] Find a lost partition at sector: 47584256, node id: 10
+[2025-01-22 12:07:42.618] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 47586314
+[2025-01-22 12:07:42.618] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:07:42.619] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 47589418
+[2025-01-22 12:07:42.619] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:07:42.619] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] begin, sectorPos: 47590448
+[2025-01-22 12:07:42.619] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] end, volumeStartOffset: 24366309376, totalCapacity: 3160576, sectorSize: 512, sectorsPerCluster: 1, mftStartOffset: 24367363072, backupDbrOffset: 24369469952
+[2025-01-22 12:07:42.619] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::findLostPartition] Find a lost partition at sector: 47590448, node id: 11
+[2025-01-22 12:07:42.620] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 47592506
+[2025-01-22 12:07:42.621] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:07:42.622] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 47595610
+[2025-01-22 12:07:42.622] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:07:42.622] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] begin, sectorPos: 47596640
+[2025-01-22 12:07:42.622] [info] [P/T: 13612/22988] [ntfs::NTFSLostPartitionFinder::getLostPartitionInfo] end, volumeStartOffset: 24369479680, totalCapacity: 3160576, sectorSize: 512, sectorsPerCluster: 1, mftStartOffset: 24370533376, backupDbrOffset: 24372640256
+[2025-01-22 12:07:42.622] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::findLostPartition] Find a lost partition at sector: 47596640, node id: 12
+[2025-01-22 12:07:42.623] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 47598698
+[2025-01-22 12:07:42.623] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:07:42.623] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 47601802
+[2025-01-22 12:07:42.625] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] {} is invalid MFT Item
+[2025-01-22 12:09:38.603] [error] [P/T: 13612/22988] [CNtfsFormatScanOperator::AddMFTWithMFTItemBuffer] can not find runlist of $J.
+[2025-01-22 12:09:38.739] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 214316960
+[2025-01-22 12:09:38.739] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::ParseMFTMetaFile] Sector 214316960 is $MFT.
+[2025-01-22 12:09:38.739] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] 214316960 is valid MFT Item.
+[2025-01-22 12:09:45.585] [error] [P/T: 13612/22988] [CNtfsFormatScanOperator::AddMFTWithMFTItemBuffer] can not find runlist of $J.
+[2025-01-22 12:10:02.057] [error] [P/T: 13612/22988] [CNtfsFormatScanOperator::AddMFTWithMFTItemBuffer] can not find runlist of $J.
+[2025-01-22 12:10:02.246] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] Find $MFT sector: 219484384
+[2025-01-22 12:10:02.246] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::ParseMFTMetaFile] Sector 219484384 is $MFT.
+[2025-01-22 12:10:02.246] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FindVolumeStartWithMFTItem] 219484384 is valid MFT Item.
+[2025-01-22 12:10:02.398] [error] [P/T: 13612/22988] [CNtfsFormatScanOperator::AddMFTWithMFTItemBuffer] can not find runlist of $J.
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::ScanFinish] [0] Scan loop end, result code: %d
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions] [CNtfsFormatScanOperator::LogNTFSPartitions] Possible NTFS partition count: 7
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions] Node id: 6, NTFS id: 0, volume start offset: 0, mft start offset: 3221225472 sector size: 512, sectorsPerCluster: 8 total size: 510927044096, ctime: 133587616472633543
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions]   lsn:0AED2A6D06000000
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions] Node id: 9, NTFS id: 1, volume start offset: 24359968768, mft start offset: 24361022464 sector size: 512, sectorsPerCluster: 1 total size: 3160576, ctime: 127529768301435169
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions]   lsn:0000000000000000
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions] Node id: 10, NTFS id: 2, volume start offset: 24363139072, mft start offset: 24364192768 sector size: 512, sectorsPerCluster: 1 total size: 3160576, ctime: 127529768301435169
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions]   lsn:0000000000000000
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions] Node id: 11, NTFS id: 3, volume start offset: 24366309376, mft start offset: 24367363072 sector size: 512, sectorsPerCluster: 1 total size: 3160576, ctime: 127529768301435169
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions]   lsn:0000000000000000
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions] Node id: 12, NTFS id: 4, volume start offset: 24369479680, mft start offset: 24370533376 sector size: 512, sectorsPerCluster: 1 total size: 3160576, ctime: 127529768301435169
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions]   lsn:0000000000000000
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions] Node id: 13, NTFS id: 5, volume start offset: 106509058048, mft start offset: 109730283520 sector size: 512, sectorsPerCluster: 8 total size: 510927044608, ctime: 133587616472633543
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions]   lsn:0AED2A6D06000000
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions] Node id: 14, NTFS id: 6, volume start offset: 109154779136, mft start offset: 112376004608 sector size: 512, sectorsPerCluster: 8 total size: 510927044608, ctime: 133587616472633543
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::LogNTFSPartitions]   lsn:0AED2A6D06000000
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildNotMatchMFTItems] start build
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildNotMatchMFTItems] segments count: 0
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildNotMatchMFTItems] done
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::PushFolderByLostUsnJrnl] begin
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::PushFolderByLostUsnJrnl] end
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::PushFolderByLostIndexAllocData] begin
+[2025-01-22 12:23:56.666] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::PushFolderByLostIndexAllocData] end
+[2025-01-22 12:23:56.878] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 1000
+[2025-01-22 12:23:56.972] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 2000
+[2025-01-22 12:23:57.057] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 3000
+[2025-01-22 12:23:57.160] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 4000
+[2025-01-22 12:23:57.336] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 5000
+[2025-01-22 12:23:57.501] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 6000
+[2025-01-22 12:23:57.501] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 6000
+[2025-01-22 12:23:57.737] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 7000
+[2025-01-22 12:23:57.737] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 7000
+[2025-01-22 12:23:57.737] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 7000
+[2025-01-22 12:23:57.737] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 7000
+[2025-01-22 12:23:57.878] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 8000
+[2025-01-22 12:23:59.794] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 9000
+[2025-01-22 12:23:59.882] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 10000
+[2025-01-22 12:23:59.996] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 11000
+[2025-01-22 12:23:59.996] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 11000
+[2025-01-22 12:24:00.178] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 12000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.305] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::MakeSureFileInfo] imcompleteMFTItems_ size: 13000
+[2025-01-22 12:24:00.444] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] Start to rebuild lost partition.
+[2025-01-22 12:24:00.446] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] import incomplete files: 13717
+[2025-01-22 12:24:00.482] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 1000/13717
+[2025-01-22 12:24:00.533] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 2000/13717
+[2025-01-22 12:24:00.592] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 3000/13717
+[2025-01-22 12:24:00.631] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 4000/13717
+[2025-01-22 12:24:00.674] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 5000/13717
+[2025-01-22 12:24:00.720] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 6000/13717
+[2025-01-22 12:24:00.750] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 7000/13717
+[2025-01-22 12:24:00.782] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 8000/13717
+[2025-01-22 12:24:00.815] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 9000/13717
+[2025-01-22 12:24:00.861] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 10000/13717
+[2025-01-22 12:24:00.906] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 11000/13717
+[2025-01-22 12:24:00.955] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 12000/13717
+[2025-01-22 12:24:01.021] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] RebuildLostPartitionFiles: 13000/13717
+[2025-01-22 12:24:01.067] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::RebuildLostPartitionFiles] Rebuild done, add count: 13704
+[2025-01-22 12:24:01.069] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::FinishScan] [CNtfsFormatScanOperator::FinishScan] Done, result code: 0
+[2025-01-22 12:24:01.069] [info] [P/T: 13612/22988] [CNtfsFormatScanOperator::ScanFinish] FinishScan done.

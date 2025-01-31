@@ -1,0 +1,49 @@
+[2025-01-22 12:06:05.363] [info] [P/T: 13612/24144] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:06.026] [info] [P/T: 13612/25292] [DeviceExplorer::CDeviceExplore::EnumDevice] EnumDevice start
+[2025-01-22 12:06:06.042] [info] [P/T: 20892/25512] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:06.055] [info] [P/T: 13612/25292] [CPartitionManager::QueryDiskDrive] [WMI] 1, SK hynix BC901 HFS512GEJ9X108N, PhysicalDrive0, Internal.
+[2025-01-22 12:06:06.077] [info] [P/T: 20892/25512] [DeviceExplorer::CDeviceExplore::EnumDevice] EnumDevice start
+[2025-01-22 12:06:06.097] [info] [P/T: 20892/25512] [CPartitionManager::QueryDiskDrive] [WMI] 1, SK hynix BC901 HFS512GEJ9X108N, PhysicalDrive0, Internal.
+[2025-01-22 12:06:06.307] [info] [P/T: 13612/25292] [CPartitionManager::QueryPhysicalDisk] DeviceId: 0, SetupCategory: 0x4000000
+[2025-01-22 12:06:06.350] [info] [P/T: 20892/25512] [CPartitionManager::QueryLogicalDiskToPartition] LogicalDiskToPartitionArray WMI ERROR
+[2025-01-22 12:06:06.350] [info] [P/T: 20892/25512] [CPartitionManager::QueryLogicalDiskToPartition] LogicalDiskToPartitionArray count: 1
+[2025-01-22 12:06:06.350] [info] [P/T: 13612/25292] [CPartitionManager::QueryLogicalDiskToPartition] LogicalDiskToPartitionArray WMI ERROR
+[2025-01-22 12:06:06.350] [info] [P/T: 13612/25292] [CPartitionManager::QueryLogicalDiskToPartition] LogicalDiskToPartitionArray count: 1
+[2025-01-22 12:06:06.369] [info] [P/T: 20892/25512] [CPartitionManager::QueryVolume] Drive:C, Start: 567296, End: 998471679, Capacity: 475.84GB, Virtual(0x00, 0x01), Physical(0x00, 0x00).
+[2025-01-22 12:06:06.370] [info] [P/T: 13612/25292] [CPartitionManager::QueryVolume] Drive:*, Start: 998471680, End: 1000202239, Capacity: 0.83GB, Virtual(0x00, 0x00), Physical(0x00, 0x00).
+[2025-01-22 12:06:06.370] [info] [P/T: 20892/25512] [CPartitionManager::QueryVolume] Drive:*, Start: 998471680, End: 1000202239, Capacity: 0.83GB, Virtual(0x00, 0x00), Physical(0x00, 0x00).
+[2025-01-22 12:06:06.370] [info] [P/T: 13612/25292] [CPartitionManager::QueryVolume] Drive:*, Start: 2048, End: 534527, Capacity: 0.25GB, Virtual(0x00, 0x00), Physical(0x00, 0x00).
+[2025-01-22 12:06:06.370] [info] [P/T: 20892/25512] [CPartitionManager::QueryVolume] Drive:*, Start: 2048, End: 534527, Capacity: 0.25GB, Virtual(0x00, 0x00), Physical(0x00, 0x00).
+[2025-01-22 12:06:06.372] [info] [P/T: 13612/25292] [CWindowsDeviceIo::Open] [CWindowsDeviceIo]: Open device \\.\PhysicalDrive0, device size: 512110190592, sector size: 512
+[2025-01-22 12:06:06.372] [info] [P/T: 13612/25292] [CDisk::CreateExpress] [CreateExpress] Set disk parameters.
+[2025-01-22 12:06:06.372] [info] [P/T: 13612/25292] [CDisk::CreateExpress] TracksPerCylinder=255, SectorsPerTrack=63, BytesPerSector=512, DiskSize=512110190592
+[2025-01-22 12:06:06.372] [info] [P/T: 20892/25512] [CWindowsDeviceIo::Open] [CWindowsDeviceIo]: Open device \\.\PhysicalDrive0, device size: 512110190592, sector size: 512
+[2025-01-22 12:06:06.372] [info] [P/T: 20892/25512] [CDisk::CreateExpress] [CreateExpress] Set disk parameters.
+[2025-01-22 12:06:06.372] [info] [P/T: 20892/25512] [CDisk::CreateExpress] TracksPerCylinder=255, SectorsPerTrack=63, BytesPerSector=512, DiskSize=512110190592
+[2025-01-22 12:06:06.372] [info] [P/T: 20892/25512] [CDisk::CreateExpress] Disk Mode: SK hynix BC901 HFS512GEJ9X108N, Media Type: Fixed hard disk media
+[2025-01-22 12:06:06.372] [info] [P/T: 20892/25512] [CVolume::OpenHandle] OpenHandle volume: /dev/hda1- 290455552- 510927044608, 0
+[2025-01-22 12:06:06.372] [info] [P/T: 20892/25512] [CVolumeDeviceIo::Open] [CVolumeDeviceIo]: Open device \\?\Volume{3f81f9c3-9ae4-41f6-a9df-634e61dd42ec} success
+[2025-01-22 12:06:06.372] [info] [P/T: 13612/25292] [CVolume::OpenHandle] OpenHandle volume: /dev/hda1- 290455552- 510927044608, 0
+[2025-01-22 12:06:06.372] [info] [P/T: 20892/25512] [DeviceExplorer::CDeviceExplore::WinExploreExpress] Filter the system volume: Local Disk in PhysicalDrive0
+[2025-01-22 12:06:06.372] [info] [P/T: 20892/25512] [DeviceExplorer::CDeviceExplore::WinExploreExpress] Filter the system volume: SYSTEM in PhysicalDrive0
+[2025-01-22 12:06:06.372] [info] [P/T: 20892/25512] [DeviceExplorer::CDeviceExplore::WinExploreExpress] Filter the system volume:  in PhysicalDrive0
+42ec} success
+[2025-01-22 12:06:06.373] [info] [P/T: 20892/25512] [DeviceExplorer::CDeviceExplore::WinExploreExpress] Common Volumes Count: 3
+[2025-01-22 12:06:06.373] [info] [P/T: 13612/25292] [DeviceExplorer::CDeviceExplore::WinExploreExpress] Filter the system volume: Local Disk in PhysicalDrive0
+[2025-01-22 12:06:06.373] [info] [P/T: 13612/25292] [DeviceExplorer::CDeviceExplore::WinExploreExpress] Filter the system volume: SYSTEM in PhysicalDrive0
+[2025-01-22 12:06:06.373] [info] [P/T: 13612/25292] [DeviceExplorer::CDeviceExplore::WinExploreExpress] Filter the system volume:  in PhysicalDrive0
+[2025-01-22 12:06:06.373] [info] [P/T: 13612/25292] [DeviceExplorer::CDeviceExplore::WinExploreExpress] Common Volumes Count: 3
+[2025-01-22 12:06:06.376] [info] [P/T: 13612/25292] [DeviceExplorer::CDeviceExplore::EnumDevice] EnumDevice completed
+[2025-01-22 12:06:07.874] [info] [P/T: 13612/25292] [CCommDeviceIo::Close] [CCommDeviceIo] : Close device m_fd = 19
+[2025-01-22 12:06:07.874] [info] [P/T: 13612/25292] [CStorageDevice::InitLocalDevicePrivate] [CStorageDevice]: Close the device is and reopen again
+[2025-01-22 12:06:07.875] [info] [P/T: 13612/25292] [CVolumeDeviceIo::Open] [CVolumeDeviceIo]: Open device \\?\Volume{3f81f9c3-9ae4-41f6-a9df-634e61dd42ec} success
+[2025-01-22 12:06:07.875] [info] [P/T: 13612/25292] [CVolume::OpenHandle] OpenHandle volume: /dev/hda1- 290455552- 510927044608, 1
+[2025-01-22 12:06:07.875] [info] [P/T: 13612/25292] [CVolumeDeviceIo::Open] [CVolumeDeviceIo]: Open device \\?\Volume{3f81f9c3-9ae4-41f6-a9df-634e61dd42ec} success
+[2025-01-22 12:06:07.875] [info] [P/T: 13612/25292] [CStorageDevice::SetScanDevice] [IO] I/O device: 0, external: 0, device ID: 0x2000010000000454
+[2025-01-22 12:06:46.523] [info] [P/T: 13612/25292] [CStorageDevice::closeHandle] [CStorageDevice::closeHandle] Will close all deviceio, type: 1.
+[2025-01-22 12:06:46.625] [info] [P/T: 13612/6200] [CStorageDevice::InitLocalDevicePrivate] [CStorageDevice]: Close the device is and reopen again
+[2025-01-22 12:06:46.625] [info] [P/T: 13612/6200] [CVolumeDeviceIo::Open] [CVolumeDeviceIo]: Open device \\?\Volume{3f81f9c3-9ae4-41f6-a9df-634e61dd42ec} success
+[2025-01-22 12:06:46.626] [info] [P/T: 13612/6200] [CVolume::OpenHandle] OpenHandle volume: /dev/hda1- 290455552- 510927044608, 1
+[2025-01-22 12:06:46.626] [info] [P/T: 13612/6200] [CVolumeDeviceIo::Open] [CVolumeDeviceIo]: Open device \\?\Volume{3f81f9c3-9ae4-41f6-a9df-634e61dd42ec} success
+[2025-01-22 12:06:46.626] [info] [P/T: 13612/6200] [CStorageDevice::SetScanDevice] [IO] I/O device: 0, external: 0, device ID: 0x2000010000000454
+[2025-01-22 12:23:54.269] [warning] [P/T: 13612/16624] [CStorageDevice::AdjustDeviceRecord] Check some bad sectors, level: 1, reason: ReadSector failure

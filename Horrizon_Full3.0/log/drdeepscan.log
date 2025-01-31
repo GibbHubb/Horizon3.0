@@ -1,0 +1,12 @@
+[2025-01-22 12:06:05.361] [info] [P/T: 13612/24144] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:06.041] [info] [P/T: 20892/25512] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:15:57.010] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseHeader] Find header in 0x26C43F1C00
+[2025-01-22 12:15:57.176] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseData] Didn't find footer before reaching maximum
+[2025-01-22 12:17:10.350] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseHeader] Find header in 0x333B9A3600
+[2025-01-22 12:17:10.540] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseData] Didn't find footer before reaching maximum
+[2025-01-22 12:20:05.154] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseHeader] Find header in 0x5148FACC00
+[2025-01-22 12:20:05.361] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseData] Didn't find footer before reaching maximum
+[2025-01-22 12:20:55.370] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseHeader] Find header in 0x5A38C3C600
+[2025-01-22 12:20:55.531] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseData] Didn't find footer before reaching maximum
+[2025-01-22 12:21:50.535] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseHeader] Find header in 0x645C4EFC00
+[2025-01-22 12:21:50.702] [info] [P/T: 13612/6860] [CAacAnalyser::AnalyseData] Didn't find footer before reaching maximum

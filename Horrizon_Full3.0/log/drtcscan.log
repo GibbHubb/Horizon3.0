@@ -1,0 +1,796 @@
+[2025-01-22 12:06:05.361] [info] [P/T: 13612/24144] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:06.042] [info] [P/T: 20892/25512] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:07.878] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Attempting to open the thumbcache database: C:\Users\Max-G\AppData\Local\Microsoft\Windows\Explorer\thumbcache_1280.db
+[2025-01-22 12:06:07.879] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.879] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Extracting file header (24 bytes).
+[2025-01-22 12:06:07.879] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Version: Windows 10
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache type: thumbcache_1280.db, 1280x1280
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to first cache entry: 24 bytes
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to available cache entry: 67892 bytes
+[2025-01-22 12:06:07.880] [warning] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Number of cache entries: Unknown
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 13322 bytes
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: ebaaaa827d97c530
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 13229 bytes
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 220x220
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 2159aec524aec360
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 7faf4ddc8f839691
+[2025-01-22 12:06:07.880] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: ebaaaa827d97c530.jpg
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 13038 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 7859de110e119a4d
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 12947 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 288x218
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 2255adb3155e882e
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 762b7da74734f0cd
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 7859de110e119a4d.jpg
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 19656 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 902907f5462b7876
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 19568 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 226x400
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): eb1e25f6c7b78096
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): f12174404b73bbae
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 902907f5462b7876.jpg
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 21852 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: fbcdee3436c9d95f
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 21762 bytes
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 460x258
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 1ef6d78165215874
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 9178e6e6c69562b6
+[2025-01-22 12:06:07.881] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: fbcdee3436c9d95f.jpg
+[2025-01-22 12:06:07.882] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.882] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Empty cache entry located at 67892 bytes.
+[2025-01-22 12:06:07.882] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Adjusting offset for next entry.
+[2025-01-22 12:06:07.882] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.882] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Invalid cache entry located at 67948 bytes.
+[2025-01-22 12:06:07.882] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Attempting to scan for next entry.
+[2025-01-22 12:06:07.883] [warning] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Scan failed to find any valid entries.
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Attempting to open the thumbcache database: C:\Users\Max-G\AppData\Local\Microsoft\Windows\Explorer\thumbcache_1920.db
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Extracting file header (24 bytes).
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Version: Windows 10
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache type: thumbcache_1920.db, 1920x1920
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to first cache entry: 24 bytes
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to available cache entry: 24 bytes
+[2025-01-22 12:06:07.883] [warning] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Number of cache entries: Unknown
+[2025-01-22 12:06:07.883] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.884] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] End of file reached. There are no more entries.
+[2025-01-22 12:06:07.884] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Attempting to open the thumbcache database: C:\Users\Max-G\AppData\Local\Microsoft\Windows\Explorer\thumbcache_256.db
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Extracting file header (24 bytes).
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Version: Windows 10
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache type: thumbcache_256.db, 256x256
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to first cache entry: 24 bytes
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to available cache entry: 816806 bytes
+[2025-01-22 12:06:07.896] [warning] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Number of cache entries: Unknown
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 88 bytes
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 273655b0576e9022
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 0 bytes
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 0x0
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry was removed because its dimensions is not reach the dimension limit: 2500
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Attempting to open the thumbcache database: C:\Users\Max-G\AppData\Local\Microsoft\Windows\Explorer\thumbcache_2560.db
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Extracting file header (24 bytes).
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Version: Windows 10
+[2025-01-22 12:06:07.896] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache type: thumbcache_2560.db, 2560x2560
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to first cache entry: 24 bytes
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to available cache entry: 24 bytes
+[2025-01-22 12:06:07.897] [warning] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Number of cache entries: Unknown
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] End of file reached. There are no more entries.
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Attempting to open the thumbcache database: C:\Users\Max-G\AppData\Local\Microsoft\Windows\Explorer\thumbcache_768.db
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Extracting file header (24 bytes).
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Version: Windows 10
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache type: thumbcache_768.db, 768x768
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to first cache entry: 24 bytes
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to available cache entry: 34824 bytes
+[2025-01-22 12:06:07.897] [warning] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Number of cache entries: Unknown
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 34800 bytes
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 43114687ed51fcb9
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 34708 bytes
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 768x768
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 476b269d106d6130
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 99de66c8f0dec9a3
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 43114687ed51fcb9.png
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.897] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Empty cache entry located at 34824 bytes.
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Adjusting offset for next entry.
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Invalid cache entry located at 34880 bytes.
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Attempting to scan for next entry.
+[2025-01-22 12:06:07.898] [warning] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Scan failed to find any valid entries.
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Attempting to open the thumbcache database: C:\Users\Max-G\AppData\Local\Microsoft\Windows\Explorer\thumbcache_96.db
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Extracting file header (24 bytes).
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Version: Windows 10
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache type: thumbcache_96.db, 96x96
+[2025-01-22 12:06:07.898] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to first cache entry: 24 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Offset to available cache entry: 5028080 bytes
+[2025-01-22 12:06:07.899] [warning] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Number of cache entries: Unknown
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 11d656c3fce31536
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 359c3a129df17b6f
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 5f3b69cd3fc59861
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 11d656c3fce31536.bmp
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 590caa192e17bdca
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 6aa50d8137d96d91
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 10555c5d6f7a4d72
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 590caa192e17bdca.bmp
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 37104 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 4fdac0986bf47c1e
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 37014 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x96
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): fd5c5e99a5caed4b
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 46b4ffcab77b6bfe
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 4fdac0986bf47c1e.bmp
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 029ef0e1a382dcfe
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 30 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): d565bb2bb432b131
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 0f3d6a140fb8c92a
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 29ef0e1a382dcfe.bmp
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 16752 bytes
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 865e1eb0d7cbf96d
+[2025-01-22 12:06:07.899] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 16662 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 43x96
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 9ea8b2436b34edd1
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 7b26f2d605c46e2d
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 865e1eb0d7cbf96d.bmp
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 20976 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 1ccea4acb68fce79
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 20886 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 54x96
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 4511ee2e92ac73ee
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 607d17607efb2c7a
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 1ccea4acb68fce79.bmp
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 65c8f4e0565cb281
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 7a0ea3a55dad61a6
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): fa9c014b8776d36f
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 65c8f4e0565cb281.bmp
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 32496 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: bd1b40fdaa287b2d
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 32406 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x84
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 49e5bb6a7660525b
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): a3e5490441f54643
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: bd1b40fdaa287b2d.bmp
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 20976 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: e044b815a5e4b9d4
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 20886 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 54x96
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 49eb66af8b227c20
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): f702299e3c1ca491
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: e044b815a5e4b9d4.bmp
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: f51eadb81d255e28
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 7a6880ead784b8a1
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 2520c442aaf8facb
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: f51eadb81d255e28.bmp
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: af6c1ad9b59779c4
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 80050173a84de403
+[2025-01-22 12:06:07.900] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): a98af6b5c969f83a
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: af6c1ad9b59779c4.bmp
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: c7ca4922eb79e759
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): e5f3e8ff23fa4cba
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 37794b42e036d4da
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: c7ca4922eb79e759.bmp
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 8f84e83f1b19ed0b
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 119873465b1ebed9
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): c4662d6860005c7c
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 8f84e83f1b19ed0b.bmp
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 4817a5ca4529f8ba
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): d3cb726993fc5c94
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 5256ccda695af91e
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 4817a5ca4529f8ba.bmp
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: c51424df65a182bb
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 3fdc1cbe68ac16fd
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 07a7da78d652de79
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: c51424df65a182bb.bmp
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: a56d3244b222f3c2
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 2be8ed99523971d9
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): f6c07d0cf9a080ef
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: a56d3244b222f3c2.bmp
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 22b8b0b8478e2e83
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 20ff7e26e8eeb5c1
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): bd798728736a71f1
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 22b8b0b8478e2e83.bmp
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 3852cf1561fbae02
+[2025-01-22 12:06:07.901] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 5cce0fe2cbc8f625
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): d6bbfd1f31c705d6
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 3852cf1561fbae02.bmp
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: b6d1d92c86c3b6c4
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 8771e71323c8f673
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): d7f2b1ece2d6a826
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: b6d1d92c86c3b6c4.bmp
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 76b87d1ec46eb537
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 297ff79cdba59b38
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 7b5aeef607ac644a
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 76b87d1ec46eb537.bmp
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 0eb3a546b6cbd3c5
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 30 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 84a3e5ce18aded04
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 01f6e359e44c7bfa
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: eb3a546b6cbd3c5.bmp
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 64fa0cb76eb90cc2
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): b1d08e0e960bc3e2
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): d2fad16385090d2b
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 64fa0cb76eb90cc2.bmp
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: c228c9cfa0d4a8c9
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): bcc00a673f3d3a4e
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): d78110173a1ede1c
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: c228c9cfa0d4a8c9.bmp
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 5b4dc1155a217939
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 1e7e847246ab7166
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): a8203977ec883688
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 5b4dc1155a217939.bmp
+[2025-01-22 12:06:07.902] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: bb479021ab1df3ce
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 637917ec25508ed6
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 23c9792677c705ba
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: bb479021ab1df3ce.bmp
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 033a06c1c2197c35
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 30 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 1deaddfb3f3e743e
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 1f42bb2947b5ccca
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 33a06c1c2197c35.bmp
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 058fe1ec9161e39b
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 30 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 5bbb5722c92d83eb
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 45856e4fdefab8a3
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 58fe1ec9161e39b.bmp
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 574579efed651fe0
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 76a6c10e311debcc
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 7ac771ddcca0c70c
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 574579efed651fe0.bmp
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 019a27db6ae450d7
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 30 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): b65a45e11d2de550
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 3a4c056fe7e75c95
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 19a27db6ae450d7.bmp
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 68fb154369d92ec3
+[2025-01-22 12:06:07.903] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): ebec2dc80d60e981
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): f2d43c4f6bd9eadc
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 68fb154369d92ec3.bmp
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: c5357ca16d857007
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 7a72c0393cf074d5
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 0332da9e893115a7
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: c5357ca16d857007.bmp
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: d368a57b69268cfb
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 2a81e5d843ece070
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 99d8fa462cf3ba73
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: d368a57b69268cfb.bmp
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 6c42c91ae35b4bb2
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 6036f2227bec127f
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): eee1bcc3b18f9919
+[2025-01-22 12:06:07.904] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 6c42c91ae35b4bb2.bmp
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: ffc0281d1f075699
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x72
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 808e4f8e2d7acf78
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 7074036985679cdf
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: ffc0281d1f075699.bmp
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 1c7c8fef1a7954ff
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): b98e628501214bcd
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): f083afac0def8c98
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 1c7c8fef1a7954ff.bmp
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: f12981c93303a29c
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 53ec47c072d2318c
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 160108ee4491e328
+[2025-01-22 12:06:07.905] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: f12981c93303a29c.bmp
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 27888 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 39c3a64a85592b36
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 27798 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x96
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 31145e0e95037d7f
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 96470ba805e45551
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 39c3a64a85592b36.bmp
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 37104 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 8a5d65241f07d605
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 37014 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x96
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 3486efb06ab99af1
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 08b0c4b0fb382235
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 8a5d65241f07d605.bmp
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 37104 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: d44d9f395685e099
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 37014 bytes
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x96
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 72b60921f758d3db
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 244806665fddf545
+[2025-01-22 12:06:07.906] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: d44d9f395685e099.bmp
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 32112 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: d9f3182e001e32e4
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 32022 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x83
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 163f2a87bf016703
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 0f3fca3e1d94029b
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: d9f3182e001e32e4.bmp
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 31728 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: d7a61fd94f85820d
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 31638 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x82
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): fd455279144c00e5
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): d9a6e8bc0fa481cc
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: d7a61fd94f85820d.bmp
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 21264 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: c195819302eb4262
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 21174 bytes
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 72x73
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 74c838fb6ba7e6db
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): f0a6a4138fe8dc6f
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: c195819302eb4262.bmp
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.907] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 11760 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 86ecbf9ba907f565
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 11670 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x30
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): fa728b136ab621b2
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): a010e286d2e66ccd
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 86ecbf9ba907f565.bmp
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 32496 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 1c09a062ff04e18c
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 32406 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 84x96
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): be2f61b3f33057a9
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): d6e0c7ade91fcc55
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 1c09a062ff04e18c.bmp
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 35952 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: fe749da69b79f1b0
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 35862 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 93x96
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): ac68d67c6bec8cb2
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): f354063189f49cc9
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: fe749da69b79f1b0.bmp
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 36720 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 434e1024841b5d70
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 36630 bytes
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x95
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.908] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): ab3a21eb1ac52713
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): ecb45d0226d6a1de
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 434e1024841b5d70.bmp
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 36336 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: adb8ee6c066652f1
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 36246 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x94
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): fb67b6fc09a74a0f
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): aaa68ca747dbe95e
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: adb8ee6c066652f1.bmp
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 10992 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 5934278b6c1fa0f3
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 10902 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x28
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): cd4d338743c730de
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 937ed1b5f1c4c50f
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 5934278b6c1fa0f3.bmp
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 36720 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: ff4f081e7019c820
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 36630 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x95
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 4ba12f617ba2658d
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 661e8ed4c86d4635
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: ff4f081e7019c820.bmp
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 36720 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 74200ed889d9cf7e
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 36630 bytes
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x95
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): cbe3b335b23fcd63
+[2025-01-22 12:06:07.909] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 1cfe7dfc95161866
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 74200ed889d9cf7e.bmp
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 29808 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 4a4a5b4ee30c2dac
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 29718 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x77
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): 98ccf68f949e0edd
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): f2f513dfd2f4bc61
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 4a4a5b4ee30c2dac.bmp
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 19056 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 1c8239a1dfee44b4
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 18966 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x49
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): d0ef795e08eea666
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): 5a786d3af8ea09d3
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 1c8239a1dfee44b4.bmp
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 19824 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 682dd260b91223b2
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 32 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 2 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 19734 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x51
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Unknown value: 0x%04x
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data checksum (CRC-64): a703314f0dc28115
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Header checksum (CRC-64): d8758ba42db59c15
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string: 682dd260b91223b2.bmp
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] ---------------------------------------------
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Signature (magic identifier): CMMM
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Cache size: 9840 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry hash: 0a70d6ff84955b0e
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Identifier string size: 30 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Padding size: 0 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Data size: 9750 bytes
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Dimensions: 96x25
+[2025-01-22 12:06:07.910] [info] [P/T: 13612/25292] [ThumbCacheScanOperator::Scan] Entry was removed because its dimensions is not reach the dimension limit: 2500

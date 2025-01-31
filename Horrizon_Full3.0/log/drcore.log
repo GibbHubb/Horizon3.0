@@ -1,0 +1,52 @@
+[2025-01-22 12:06:05.359] [info] [P/T: 13612/24144] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:06.026] [info] [P/T: 13612/25292] [CEngineManager::EnumDevice] Start
+[2025-01-22 12:06:06.041] [info] [P/T: 20892/25512] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:06.376] [info] [P/T: 13612/25292] [CEngineManager::EnumDevice] End
+[2025-01-22 12:06:07.873] [info] [P/T: 13612/25292] [CEngineManager::ParseScanOption] scanparam device type: 0
+[2025-01-22 12:06:07.875] [info] [P/T: 13612/25292] [CEngineManager::GetScanDeviceInfo] [CRecoverManager::Scan] sector size is 512
+[2025-01-22 12:06:07.875] [info] [P/T: 13612/25292] [CEngineManager::GetScanDeviceInfo] [Display Information]: Logical Volume: Windows(C:), TotalOfBytes: 510927044608 B
+[2025-01-22 12:06:07.878] [info] [P/T: 13612/25292] [CEngineManager::Scan] [Display Information] Scan Type: 1, Filesystem Symbol: 0x4, RecycleBin: false
+[2025-01-22 12:06:18.316] [info] [P/T: 13612/3272] [CEngineManager::SaveScanResult] saving scan result start
+[2025-01-22 12:06:18.333] [info] [P/T: 13612/3272] [CEngineManager::SaveScanResult] saving scan result end
+[2025-01-22 12:06:28.729] [info] [P/T: 13612/2120] [CEngineManager::SaveScanResult] saving scan result start
+[2025-01-22 12:06:28.745] [info] [P/T: 13612/2120] [CEngineManager::SaveScanResult] saving scan result end
+[2025-01-22 12:06:39.142] [info] [P/T: 13612/3272] [CEngineManager::SaveScanResult] saving scan result start
+[2025-01-22 12:06:39.159] [info] [P/T: 13612/3272] [CEngineManager::SaveScanResult] saving scan result end
+[2025-01-22 12:06:46.588] [info] [P/T: 13612/25292] [CScanManager::ConfigScanPloy] quick scan finish  quickFileHistory :0 SecotrHistory:0
+[2025-01-22 12:06:46.588] [info] [P/T: 13612/25292] [CScanManager::Scan] [CScanManager::Scan] scan done.
+[2025-01-22 12:06:46.625] [info] [P/T: 13612/6200] [CEngineManager::ParseScanOption] scanparam device type: 0
+[2025-01-22 12:06:46.626] [info] [P/T: 13612/6200] [CEngineManager::GetScanDeviceInfo] [CRecoverManager::Scan] sector size is 512
+[2025-01-22 12:06:46.626] [info] [P/T: 13612/6200] [CEngineManager::GetScanDeviceInfo] [Display Information]: Logical Volume: Windows(C:), TotalOfBytes: 510927044608 B
+[2025-01-22 12:06:46.626] [info] [P/T: 13612/6200] [CEngineManager::Scan] [Display Information] Scan Type: 256, Filesystem Symbol: 0x4, RecycleBin: false
+[2025-01-22 12:06:46.626] [info] [P/T: 13612/6200] [CScanManager::ConfigScanType] [CIScanDeviceFactory] can not create format scanoperator type: 4
+[2025-01-22 12:06:46.626] [error] [P/T: 13612/6200] [CScanManager::createAndSetScanOperator] 256 del scan is surpport, but not scan_opreator,pelease check createScanOperator fun!
+[2025-01-22 12:06:46.627] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] tasks count 4, join all.
+[2025-01-22 12:06:46.627] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] join 6860.
+[2025-01-22 12:06:46.627] [info] [P/T: 13612/16624] [CBufferCreator::CreateBuffer] [CBufferCreator::CreateBuffer] begin.
+[2025-01-22 12:06:46.627] [info] [P/T: 13612/16624] [CBufferCreator::CreateBuffer] crash sector pos: 0
+[2025-01-22 12:06:46.627] [info] [P/T: 13612/16624] [CBufferCreator::CreateBuffer] [CBufferCreator::CreateBuffer] current sector: 0, max sextor: 997904384
+[2025-01-22 12:06:46.628] [info] [P/T: 13612/16624] [CBufferCreator::CreateBufferFromScanRecord] [CBufferCreator::CreateBufferFromScanRecord] start create buffer from scan record
+[2025-01-22 12:06:46.628] [info] [P/T: 13612/16624] [CBufferCreator::GetRecordHistory] [CBufferCreator::GetRecordHistory] start get record history , recordHistory count is :0
+[2025-01-22 12:06:46.628] [info] [P/T: 13612/16624] [CBufferCreator::GetRecordHistory] [CBufferCreator::GetRecordHistory] end get record history 
+[2025-01-22 12:06:46.628] [info] [P/T: 13612/16624] [CBufferCreator::CreateBufferFromScanRecord] [CBufferCreator::CreateBufferFromScanRecord] total sectors: 0
+[2025-01-22 12:06:46.628] [info] [P/T: 13612/16624] [CBufferCreator::CreateBufferFromScanRecord] [CBufferCreator::CreateBufferFromScanRecord] end create buffer from scan record
+[2025-01-22 12:06:49.500] [info] [P/T: 13612/2360] [CEngineManager::SaveScanResult] saving scan result start
+[2025-01-22 12:06:49.569] [info] [P/T: 13612/2360] [CEngineManager::SaveScanResult] saving scan result end
+[2025-01-22 12:07:00.005] [info] [P/T: 13612/21020] [CEngineManager::SaveScanResult] saving scan result start
+[2025-01-22 12:07:00.189] [info] [P/T: 13612/21020] [CEngineManager::SaveScanResult] saving scan result end
+[2025-01-22 12:07:10.608] [info] [P/T: 13612/23496] [CEngineManager::SaveScanResult] saving scan result start
+[2025-01-22 12:07:10.812] [info] [P/T: 13612/23496] [CEngineManager::SaveScanResult] saving scan result end
+[2025-01-22 12:07:21.257] [info] [P/T: 13612/24400] [CEngineManager::SaveScanResult] saving scan result start
+[2025-01-22 12:07:21.571] [info] [P/T: 13612/24400] [CEngineManager::SaveScanResult] saving scan result end
+[2025-01-22 12:07:32.117] [info] [P/T: 13612/10288] [CEngineManager::SaveScanResult] saving scan result start
+[2025-01-22 12:07:32.385] [info] [P/T: 13612/10288] [CEngineManager::SaveScanResult] saving scan result end
+[2025-01-22 12:23:54.271] [info] [P/T: 13612/16624] [CBufferCreator::CreateBuffer] [CBufferCreator::CreateBuffer] end.
+[2025-01-22 12:23:54.305] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] join done.
+[2025-01-22 12:23:54.305] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] join 19872.
+[2025-01-22 12:23:54.305] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] join done.
+[2025-01-22 12:23:54.305] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] join 3396.
+[2025-01-22 12:23:54.305] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] join done.
+[2025-01-22 12:23:54.305] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] join 22988.
+[2025-01-22 12:24:01.069] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] join done.
+[2025-01-22 12:24:01.069] [info] [P/T: 13612/6200] [CTaskManager::JoinTask] join all done.
+[2025-01-22 12:24:01.069] [info] [P/T: 13612/6200] [CScanManager::Scan] [CScanManager::Scan] scan done.

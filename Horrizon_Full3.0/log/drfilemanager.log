@@ -1,0 +1,15 @@
+[2025-01-22 12:06:05.365] [info] [P/T: 13612/24144] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:06:06.043] [info] [P/T: 20892/25512] [] version: 13.0.0.483-96d8ee44e
+[2025-01-22 12:07:34.907] [info] [P/T: 13612/20272] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 60597392
+[2025-01-22 12:07:34.955] [info] [P/T: 13612/20272] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 80809064
+[2025-01-22 12:07:34.994] [info] [P/T: 13612/17876] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 80809056
+[2025-01-22 12:07:35.052] [info] [P/T: 13612/17876] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 37055816
+[2025-01-22 12:07:35.107] [info] [P/T: 13612/17876] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 56246008
+[2025-01-22 12:07:35.134] [info] [P/T: 13612/17876] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 80809144
+[2025-01-22 12:07:35.187] [info] [P/T: 13612/17876] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 212587152
+[2025-01-22 12:07:35.214] [info] [P/T: 13612/17876] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 60321312
+[2025-01-22 12:07:35.221] [info] [P/T: 13612/17876] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 80809136
+[2025-01-22 12:07:35.258] [info] [P/T: 13612/17876] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 69021080
+[2025-01-22 12:07:36.941] [info] [P/T: 13612/10872] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 68391520
+[2025-01-22 12:07:36.982] [info] [P/T: 13612/10872] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 126016992
+[2025-01-22 12:07:37.018] [info] [P/T: 13612/23724] [CFileOP::ReadFile] [PREVIEW]: Sector start pos: 32437208
