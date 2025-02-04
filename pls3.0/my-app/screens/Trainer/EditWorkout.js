@@ -3,13 +3,12 @@ import {
   View,
   Text,
   TextInput,
-  StyleSheet,
   ScrollView,
   TouchableOpacity,
   Alert,
-  Dimensions,
+  StyleSheet,
 } from 'react-native';
-import { fetchGroupWorkoutDetails, addParticipantsToWorkout } from '../../utils/api';
+import { fetchGroupWorkoutDetails, addParticipantsToWorkout, fetchSuggestedWeights } from '../../utils/api';
 
 export default function EditWorkoutScreen({ route, navigation }) {
   const { workoutId, workoutDetails } = route.params || {};
@@ -18,35 +17,77 @@ export default function EditWorkoutScreen({ route, navigation }) {
   const [exercises, setExercises] = useState([]);
   const [loading, setLoading] = useState(true);
   const [newParticipant, setNewParticipant] = useState('');
-
-  const screenWidth = Dimensions.get('window').width;
+  const [newExercise, setNewExercise] = useState('');
 
   useEffect(() => {
     const loadWorkoutDetails = async () => {
-        try {
-            if (!workoutDetails) {
-                console.log("🔄 Fetching workout details for ID:", workoutId);
-                const fetchedWorkout = await fetchGroupWorkoutDetails(workoutId);
-                setWorkout(fetchedWorkout);
-                setParticipants(fetchedWorkout.participants || []);
-                setExercises(fetchedWorkout.exercises || []);
-            } else {
-                console.log("✅ Received workout details via navigation:", workoutDetails);
-                setWorkout(workoutDetails);
-                setParticipants(workoutDetails.participants || []);
-                setExercises(workoutDetails.exercises || []);
-            }
-        } catch (error) {
-            console.error('❌ Error fetching workout details:', error.message);
-            Alert.alert('Error', 'Failed to fetch workout details.');
-            navigation.goBack();
-        } finally {
-            setLoading(false);
+      if (!workoutId) return;
+
+      try {
+        console.log("🔄 Fetching workout details for ID:", workoutId);
+
+        let fetchedWorkout = workoutDetails;
+        if (!fetchedWorkout) {
+          fetchedWorkout = await fetchGroupWorkoutDetails(workoutId);
         }
+
+        setWorkout(fetchedWorkout);
+        setParticipants(fetchedWorkout.participants || []);
+        setExercises(fetchedWorkout.exercises || []);
+
+        // ✅ Fetch suggested weights after setting participants
+        const suggestedWeights = await fetchSuggestedWeights(workoutId);
+        console.log("💪 Suggested weights received:", suggestedWeights);
+
+        if (Array.isArray(suggestedWeights) && suggestedWeights.length > 0) {
+          const participantWeightsMap = {};
+
+          // 🔄 Process each suggested weight and map it correctly
+          suggestedWeights.forEach((sw) => {
+            if (!participantWeightsMap[sw.user_id]) {
+              participantWeightsMap[sw.user_id] = {};
+            }
+
+            // 🔥 Assign only the correct suggested weight
+            participantWeightsMap[sw.user_id][sw.exercise_id] = sw.suggested_weight;
+          });
+
+          // ✅ Map weights to participants
+          setParticipants((prevParticipants) =>
+            prevParticipants.map((participant) => ({
+              ...participant,
+              weights: participantWeightsMap[participant.user_id] || {},
+            }))
+          );
+        } else {
+          console.warn("⚠️ No suggested weights found.");
+        }
+      } catch (error) {
+        console.error('❌ Error fetching workout details:', error.message);
+        Alert.alert('Error', 'Failed to fetch workout details.');
+        navigation.goBack();
+      } finally {
+        setLoading(false);
+      }
     };
 
     loadWorkoutDetails();
-}, [workoutId, workoutDetails]);
+  }, [workoutId]);
+
+
+  const handleWeightChange = (participantIndex, exerciseId, value) => {
+    setParticipants((prevParticipants) => {
+      const updatedParticipants = [...prevParticipants];
+      const participant = updatedParticipants[participantIndex];
+
+      if (!participant.weights) {
+        participant.weights = {};
+      }
+
+      participant.weights[exerciseId] = value;
+      return updatedParticipants;
+    });
+  };
 
   const handleAddParticipant = () => {
     if (!newParticipant.trim()) {
@@ -55,45 +96,47 @@ export default function EditWorkoutScreen({ route, navigation }) {
     }
     setParticipants((prev) => [
       ...prev,
-      { participant_name: newParticipant, weights: {} },
+      { user_id: Date.now(), participant_name: newParticipant, weights: {} }, // 🔥 Temporary ID for new participant
     ]);
     setNewParticipant('');
   };
 
-  const handleWeightChange = (participantIndex, exerciseIndex, value) => {
-    const updatedParticipants = [...participants];
-    if (!updatedParticipants[participantIndex].weights) {
-      updatedParticipants[participantIndex].weights = {};
+  const handleAddExercise = () => {
+    if (!newExercise.trim()) {
+      Alert.alert('Error', 'Please enter a valid exercise name.');
+      return;
     }
-    updatedParticipants[participantIndex].weights[exerciseIndex] = value;
-    setParticipants(updatedParticipants);
-  };
-
-  const handleSave = async () => {
-    try {
-      const payload = {
-        participants: participants.map((participant) => ({
-          participant_name: participant.participant_name,
-          weights: participant.weights,
-        })),
-      };
-
-      console.log('Saving participants to workout:', payload);
-      await addParticipantsToWorkout(workoutId, payload.participants);
-      Alert.alert('Success', 'Participants added successfully!');
-    } catch (error) {
-      console.error('Error saving participants:', error.message);
-      Alert.alert('Error', 'Failed to save participants.');
-    }
+    setExercises((prev) => [
+      ...prev,
+      { exercise_id: Date.now(), exercise_name: newExercise }, // 🔥 Temporary ID for new exercise
+    ]);
+    setNewExercise('');
   };
 
   const handleStartTraining = () => {
     if (!workoutId || !workout) {
-        Alert.alert("Error", "Workout data is missing.");
-        return;
+      Alert.alert("Error", "Workout data is missing.");
+      return;
     }
-    navigation.navigate('TrainerScreen', { workoutId, workoutDetails: { ...workout, participants, exercises } });
-};
+  
+    const workoutToSend = {
+      ...workout,
+      participants: participants.map((participant) => ({
+        user_id: participant.user_id,
+        participant_name: participant.participant_name,
+        weights: { ...participant.weights }, // ✅ Ensure weights are carried over
+      })),
+      exercises: exercises.map((exercise) => ({
+        exercise_id: exercise.exercise_id,
+        exercise_name: exercise.exercise_name,
+      })),
+    };
+  
+    console.log("🚀 Navigating to TrainerScreen with data:", workoutToSend);
+  
+    navigation.navigate('TrainerScreen', { workoutId, workoutDetails: workoutToSend });
+  };
+  
 
   if (loading) {
     return (
@@ -104,23 +147,10 @@ export default function EditWorkoutScreen({ route, navigation }) {
   }
 
   return (
-    <ScrollView
-      contentContainerStyle={{ flexGrow: 1 }}
-      horizontal={false} // Allow vertical scrolling for the whole page
-      showsVerticalScrollIndicator={false}
-    >
+    <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
       <View style={styles.container}>
-        {/* Back Button */}
-        <TouchableOpacity
-          style={styles.backButton}
-          onPress={() => navigation.goBack()}
-        >
-          <Text style={styles.backButtonText}>Back</Text>
-        </TouchableOpacity>
-  
-        {/* Workout Header */}
         <Text style={styles.header}>{workout?.name || 'Edit Workout'}</Text>
-  
+
         {/* Add Participant */}
         <View style={styles.addParticipantContainer}>
           <TextInput
@@ -136,68 +166,86 @@ export default function EditWorkoutScreen({ route, navigation }) {
             <Text style={styles.addParticipantButtonText}>Add Participant</Text>
           </TouchableOpacity>
         </View>
-  
-        {/* Grid Layout */}
-{/* Exercises & Weights Grid */}
-<ScrollView horizontal>
-  <View>
-    {/* Participants Row */}
-    <View style={styles.headerRow}>
-      <View style={styles.firstColumn} /> {/* Empty top-left cell */}
-      {participants.map((participant, index) => (
-        <Text key={index} style={styles.headerCell}>
-          {participant.participant_name}
-        </Text>
-      ))}
-    </View>
 
-    {/* Exercises & Inputs */}
-    <ScrollView contentContainerStyle={styles.scrollContainer}>
-      {exercises.map((exercise, exerciseIndex) => (
-        <View key={exerciseIndex} style={styles.row}>
-          {/* Exercise Name Column */}
-          <View style={styles.exerciseCell}>
-            <Text style={styles.exerciseOrder}>{exerciseIndex + 1}.</Text>
-            <Text style={styles.exerciseText}>{exercise?.name || exercise?.exercise_name || 'Unnamed Exercise'}</Text>
-          </View>
-
-          {/* Participant Weight Inputs */}
-          {participants.map((participant, participantIndex) => (
-            <TextInput
-              key={participantIndex}
-              style={styles.input}
-              placeholder="Weight"
-              keyboardType="numeric"
-              value={participant.weights?.[exerciseIndex]?.toString() || ''}
-              onChangeText={(value) =>
-                handleWeightChange(participantIndex, exerciseIndex, value)
-              }
-            />
-          ))}
+        {/* Add Exercise */}
+        <View style={styles.addParticipantContainer}>
+          <TextInput
+            style={styles.participantInput}
+            placeholder="Enter exercise name"
+            value={newExercise}
+            onChangeText={setNewExercise}
+          />
+          <TouchableOpacity
+            style={styles.addParticipantButton}
+            onPress={handleAddExercise}
+          >
+            <Text style={styles.addParticipantButtonText}>Add Exercise</Text>
+          </TouchableOpacity>
         </View>
-      ))}
-    </ScrollView>
-  </View>
+
+        {/* Grid Layout */}
+        <ScrollView horizontal>
+          <View>
+            {/* Participants Row */}
+            <View style={styles.headerRow}>
+              <View style={styles.firstColumn} /> {/* Empty top-left cell */}
+              {participants.map((participant, index) => (
+                <Text key={index} style={styles.headerCell}>
+                  {participant.participant_name}
+                </Text>
+              ))}
+            </View>
+
+            {/* Exercises & Inputs */}
+            <ScrollView contentContainerStyle={styles.scrollContainer}>
+  {exercises.map((exercise, exerciseIndex) => (
+    <View key={exercise.exercise_id || exerciseIndex} style={styles.row}>
+      <View style={styles.exerciseCell}>
+        <Text style={styles.exerciseOrder}>{exerciseIndex + 1}.</Text>
+        <Text style={styles.exerciseText}>{exercise.exercise_name}</Text>
+      </View>
+
+      {participants.map((participant, participantIndex) => {
+        const weight = participant.weights?.[exercise.exercise_id]; // ✅ Safely extract weight
+
+        return (
+          <TextInput
+            key={`${participantIndex}-${exercise.exercise_id}`}
+            style={styles.input}
+            placeholder="Weight"
+            keyboardType="numeric"
+            value={
+              weight === 0 || weight === null || weight === undefined
+                ? 'Body Weight'  // ✅ Ensure correct display for 0/null/undefined
+                : weight.toString()
+            }
+            onChangeText={(value) =>
+              handleWeightChange(participantIndex, exercise.exercise_id, value)
+            }
+          />
+        );
+      })}
+    </View>
+  ))}
 </ScrollView>
 
-  
-        {/* Footer Controls */}
+          </View>
+        </ScrollView>
+
+        {/* Footer */}
         <View style={styles.footer}>
-          <TouchableOpacity style={styles.saveButton} onPress={handleSave}>
+          <TouchableOpacity style={styles.saveButton}>
             <Text style={styles.saveButtonText}>Save Changes</Text>
           </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.startButton}
-            onPress={handleStartTraining}
-          >
+          <TouchableOpacity style={styles.startButton} onPress={handleStartTraining}>
             <Text style={styles.startButtonText}>Start Training</Text>
           </TouchableOpacity>
         </View>
       </View>
     </ScrollView>
   );
-  
 }
+
 
 const styles = StyleSheet.create({
   container: {

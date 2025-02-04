@@ -33,4 +33,6 @@ router.get('/', authenticateToken, getUsers);
 // Get the logged-in user's profile
 router.get('/me', authenticateToken, getUserProfile);
 
+router.get('/:user_id', authenticateToken, getUserProfile);
+
 module.exports = router;
