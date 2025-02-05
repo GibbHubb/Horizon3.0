@@ -1,6 +1,7 @@
 const db = require('../models/db');
 
-// Fetch Lifestyle Data for a Specific User
+
+// Fetch the last 3 Lifestyle Data entries for a Specific User
 const getLifestyleData = async (req, res) => {
   const { user_id } = req.params;
 
@@ -11,17 +12,14 @@ const getLifestyleData = async (req, res) => {
   try {
     const { rows } = await db.query(
       `
-      SELECT * 
+      SELECT lifestyle_id, user_id, date, stress, sleep, soreness, calories, weight, notes_to_trainer
       FROM Lifestyle_Data 
       WHERE user_id = $1 
       ORDER BY date DESC
+      LIMIT 3
       `,
       [user_id]
     );
-
-    if (rows.length === 0) {
-      return res.status(404).json({ message: 'No lifestyle data found for this user.' });
-    }
 
     res.status(200).json(rows);
   } catch (err) {

@@ -274,3 +274,67 @@ export async function fetchSuggestedWeights(workoutId) {
       return [];
   }
 }
+
+
+// Fetch Lifestyle Data for the logged-in user
+export const fetchLifestyleData = async () => {
+  try {
+    const user_id = await AsyncStorage.getItem('user_id');
+    const token = await AsyncStorage.getItem('authToken');
+
+    if (!user_id) {
+      console.error('❌ Error: User ID not found in AsyncStorage');
+      throw new Error('User ID not found');
+    }
+
+    if (!token) {
+      console.error('❌ Error: Auth token not found in AsyncStorage');
+      throw new Error('Authentication token not found');
+    }
+
+    console.log(`📡 Fetching lifestyle data for user_id: ${user_id}`);
+    console.log('🛠 Sending Authorization Header:', `Bearer ${token}`);
+
+    const response = await axios.get(`${API_URL}/lifestyle-data/${user_id}`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+
+    console.log('✅ Fetched Lifestyle Data:', response.data);
+    return response.data;
+  } catch (error) {
+    console.error('❌ Error fetching lifestyle data:', error.response?.data || error.message);
+    throw error;
+  }
+};
+
+
+// Submit Lifestyle Data
+export const submitLifestyleData = async (lifestyleData) => {
+  try {
+    const user_id = await AsyncStorage.getItem('user_id');
+    const token = await AsyncStorage.getItem('authToken');
+
+    if (!user_id) {
+      console.error('❌ Error: User ID not found in AsyncStorage');
+      throw new Error('User ID not found');
+    }
+
+    if (!token) {
+      console.error('❌ Error: Auth token not found in AsyncStorage');
+      throw new Error('Authentication token not found');
+    }
+
+    console.log('📡 Submitting lifestyle data:', lifestyleData);
+
+    const response = await axios.post(`${API_URL}/lifestyle-data`, 
+      { ...lifestyleData, user_id },
+      { headers: { Authorization: `Bearer ${token}` } }
+    );
+
+    console.log('✅ Submission Response:', response.data);
+    return response.data;
+  } catch (error) {
+    console.error('❌ Error submitting lifestyle data:', error.response?.data || error.message);
+    throw error;
+  }
+};

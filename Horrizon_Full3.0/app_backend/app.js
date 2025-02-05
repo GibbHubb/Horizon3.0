@@ -52,6 +52,7 @@ app.use('/api/exercises', require('./routes/exercisesRoutes'));
 app.use('/api/workouts', require('./routes/workoutsRoutes'));
 app.use('/api/group-workouts', require('./routes/groupWorkoutsRoutes'));
 app.use('/api/lifestyle-data', require('./routes/lifestyleDataRoutes'));
+app.use('/api/intake', require('./routes/intakeRoutes'));
 
 // ✅ Catch-all for undefined routes
 app.use((req, res, next) => {

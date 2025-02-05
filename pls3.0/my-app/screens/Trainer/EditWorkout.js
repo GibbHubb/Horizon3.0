@@ -7,8 +7,11 @@ import {
   TouchableOpacity,
   Alert,
   StyleSheet,
+  Image,
 } from 'react-native';
 import { fetchGroupWorkoutDetails, addParticipantsToWorkout, fetchSuggestedWeights } from '../../utils/api';
+
+const logo = require('../../imgs/Horizon.png'); // Ensure correct path
 
 export default function EditWorkoutScreen({ route, navigation }) {
   const { workoutId, workoutDetails } = route.params || {};
@@ -24,46 +27,25 @@ export default function EditWorkoutScreen({ route, navigation }) {
       if (!workoutId) return;
 
       try {
-        console.log("🔄 Fetching workout details for ID:", workoutId);
-
-        let fetchedWorkout = workoutDetails;
-        if (!fetchedWorkout) {
-          fetchedWorkout = await fetchGroupWorkoutDetails(workoutId);
-        }
-
+        let fetchedWorkout = workoutDetails || await fetchGroupWorkoutDetails(workoutId);
         setWorkout(fetchedWorkout);
         setParticipants(fetchedWorkout.participants || []);
         setExercises(fetchedWorkout.exercises || []);
 
-        // ✅ Fetch suggested weights after setting participants
+        // Fetch suggested weights
         const suggestedWeights = await fetchSuggestedWeights(workoutId);
-        console.log("💪 Suggested weights received:", suggestedWeights);
-
         if (Array.isArray(suggestedWeights) && suggestedWeights.length > 0) {
           const participantWeightsMap = {};
-
-          // 🔄 Process each suggested weight and map it correctly
           suggestedWeights.forEach((sw) => {
-            if (!participantWeightsMap[sw.user_id]) {
-              participantWeightsMap[sw.user_id] = {};
-            }
-
-            // 🔥 Assign only the correct suggested weight
+            if (!participantWeightsMap[sw.user_id]) participantWeightsMap[sw.user_id] = {};
             participantWeightsMap[sw.user_id][sw.exercise_id] = sw.suggested_weight;
           });
 
-          // ✅ Map weights to participants
-          setParticipants((prevParticipants) =>
-            prevParticipants.map((participant) => ({
-              ...participant,
-              weights: participantWeightsMap[participant.user_id] || {},
-            }))
+          setParticipants((prev) =>
+            prev.map((p) => ({ ...p, weights: participantWeightsMap[p.user_id] || {} }))
           );
-        } else {
-          console.warn("⚠️ No suggested weights found.");
         }
       } catch (error) {
-        console.error('❌ Error fetching workout details:', error.message);
         Alert.alert('Error', 'Failed to fetch workout details.');
         navigation.goBack();
       } finally {
@@ -73,70 +55,6 @@ export default function EditWorkoutScreen({ route, navigation }) {
 
     loadWorkoutDetails();
   }, [workoutId]);
-
-
-  const handleWeightChange = (participantIndex, exerciseId, value) => {
-    setParticipants((prevParticipants) => {
-      const updatedParticipants = [...prevParticipants];
-      const participant = updatedParticipants[participantIndex];
-
-      if (!participant.weights) {
-        participant.weights = {};
-      }
-
-      participant.weights[exerciseId] = value;
-      return updatedParticipants;
-    });
-  };
-
-  const handleAddParticipant = () => {
-    if (!newParticipant.trim()) {
-      Alert.alert('Error', 'Please enter a valid participant name.');
-      return;
-    }
-    setParticipants((prev) => [
-      ...prev,
-      { user_id: Date.now(), participant_name: newParticipant, weights: {} }, // 🔥 Temporary ID for new participant
-    ]);
-    setNewParticipant('');
-  };
-
-  const handleAddExercise = () => {
-    if (!newExercise.trim()) {
-      Alert.alert('Error', 'Please enter a valid exercise name.');
-      return;
-    }
-    setExercises((prev) => [
-      ...prev,
-      { exercise_id: Date.now(), exercise_name: newExercise }, // 🔥 Temporary ID for new exercise
-    ]);
-    setNewExercise('');
-  };
-
-  const handleStartTraining = () => {
-    if (!workoutId || !workout) {
-      Alert.alert("Error", "Workout data is missing.");
-      return;
-    }
-  
-    const workoutToSend = {
-      ...workout,
-      participants: participants.map((participant) => ({
-        user_id: participant.user_id,
-        participant_name: participant.participant_name,
-        weights: { ...participant.weights }, // ✅ Ensure weights are carried over
-      })),
-      exercises: exercises.map((exercise) => ({
-        exercise_id: exercise.exercise_id,
-        exercise_name: exercise.exercise_name,
-      })),
-    };
-  
-    console.log("🚀 Navigating to TrainerScreen with data:", workoutToSend);
-  
-    navigation.navigate('TrainerScreen', { workoutId, workoutDetails: workoutToSend });
-  };
-  
 
   if (loading) {
     return (
@@ -149,37 +67,56 @@ export default function EditWorkoutScreen({ route, navigation }) {
   return (
     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
       <View style={styles.container}>
+        {/* Horizon Logo */}
+        <Image source={logo} style={styles.logo} />
+
         <Text style={styles.header}>{workout?.name || 'Edit Workout'}</Text>
 
         {/* Add Participant */}
-        <View style={styles.addParticipantContainer}>
+        <View style={styles.inputContainer}>
           <TextInput
-            style={styles.participantInput}
+            style={styles.input}
             placeholder="Enter participant name"
+            placeholderTextColor="#555"
             value={newParticipant}
             onChangeText={setNewParticipant}
           />
           <TouchableOpacity
-            style={styles.addParticipantButton}
-            onPress={handleAddParticipant}
+            style={styles.addButton}
+            onPress={() => {
+              if (!newParticipant.trim()) {
+                Alert.alert('Error', 'Please enter a valid participant name.');
+                return;
+              }
+              setParticipants([...participants, { user_id: Date.now(), participant_name: newParticipant, weights: {} }]);
+              setNewParticipant('');
+            }}
           >
-            <Text style={styles.addParticipantButtonText}>Add Participant</Text>
+            <Text style={styles.buttonText}>Add</Text>
           </TouchableOpacity>
         </View>
 
         {/* Add Exercise */}
-        <View style={styles.addParticipantContainer}>
+        <View style={styles.inputContainer}>
           <TextInput
-            style={styles.participantInput}
+            style={styles.input}
             placeholder="Enter exercise name"
+            placeholderTextColor="#555"
             value={newExercise}
             onChangeText={setNewExercise}
           />
           <TouchableOpacity
-            style={styles.addParticipantButton}
-            onPress={handleAddExercise}
+            style={styles.addButton}
+            onPress={() => {
+              if (!newExercise.trim()) {
+                Alert.alert('Error', 'Please enter a valid exercise name.');
+                return;
+              }
+              setExercises([...exercises, { exercise_id: Date.now(), exercise_name: newExercise }]);
+              setNewExercise('');
+            }}
           >
-            <Text style={styles.addParticipantButtonText}>Add Exercise</Text>
+            <Text style={styles.buttonText}>Add</Text>
           </TouchableOpacity>
         </View>
 
@@ -198,47 +135,41 @@ export default function EditWorkoutScreen({ route, navigation }) {
 
             {/* Exercises & Inputs */}
             <ScrollView contentContainerStyle={styles.scrollContainer}>
-  {exercises.map((exercise, exerciseIndex) => (
-    <View key={exercise.exercise_id || exerciseIndex} style={styles.row}>
-      <View style={styles.exerciseCell}>
-        <Text style={styles.exerciseOrder}>{exerciseIndex + 1}.</Text>
-        <Text style={styles.exerciseText}>{exercise.exercise_name}</Text>
-      </View>
+              {exercises.map((exercise, exerciseIndex) => (
+                <View key={exercise.exercise_id || exerciseIndex} style={styles.row}>
+                  <View style={styles.exerciseCell}>
+                    <Text style={styles.exerciseText}>{exercise.exercise_name}</Text>
+                  </View>
 
-      {participants.map((participant, participantIndex) => {
-        const weight = participant.weights?.[exercise.exercise_id]; // ✅ Safely extract weight
-
-        return (
-          <TextInput
-            key={`${participantIndex}-${exercise.exercise_id}`}
-            style={styles.input}
-            placeholder="Weight"
-            keyboardType="numeric"
-            value={
-              weight === 0 || weight === null || weight === undefined
-                ? 'Body Weight'  // ✅ Ensure correct display for 0/null/undefined
-                : weight.toString()
-            }
-            onChangeText={(value) =>
-              handleWeightChange(participantIndex, exercise.exercise_id, value)
-            }
-          />
-        );
-      })}
-    </View>
-  ))}
-</ScrollView>
-
+                  {participants.map((participant, participantIndex) => (
+                    <TextInput
+                      key={`${participantIndex}-${exercise.exercise_id}`}
+                      style={styles.input}
+                      placeholder="Weight"
+                      keyboardType="numeric"
+                      value={participant.weights?.[exercise.exercise_id]?.toString() || ''}
+                      onChangeText={(value) => {
+                        const updated = [...participants];
+                        updated[participantIndex].weights[exercise.exercise_id] = value;
+                        setParticipants(updated);
+                      }}
+                    />
+                  ))}
+                </View>
+              ))}
+            </ScrollView>
           </View>
         </ScrollView>
 
         {/* Footer */}
         <View style={styles.footer}>
           <TouchableOpacity style={styles.saveButton}>
-            <Text style={styles.saveButtonText}>Save Changes</Text>
+            <Text style={styles.buttonText}>Save Changes</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.startButton} onPress={handleStartTraining}>
-            <Text style={styles.startButtonText}>Start Training</Text>
+          <TouchableOpacity style={styles.startButton} onPress={() => {
+            navigation.navigate('TrainerScreen', { workoutId, workoutDetails: { ...workout, participants, exercises } });
+          }}>
+            <Text style={styles.buttonText}>Start Training</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -246,147 +177,21 @@ export default function EditWorkoutScreen({ route, navigation }) {
   );
 }
 
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
-    backgroundColor: '#f8f8f8',
-  },
-  header: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginBottom: 16,
-  },
-  addParticipantContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 16,
-  },
-  participantInput: {
-    flex: 1,
-    padding: 10,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 8,
-    backgroundColor: '#fff',
-  },
-  addParticipantButton: {
-    marginLeft: 8,
-    backgroundColor: '#28A745',
-    paddingVertical: 10,
-    paddingHorizontal: 16,
-    borderRadius: 8,
-  },
-  addParticipantButtonText: {
-    color: '#fff',
-    fontWeight: 'bold',
-  },
-
-  // GRID LAYOUT STYLES
-  scrollContainer: {
-    flexGrow: 1,
-    paddingBottom: 16,
-  },
-  gridContainer: {
-    flexDirection: 'column',
-    borderWidth: 1,
-    borderColor: '#ddd',
-    backgroundColor: '#fff',
-    borderRadius: 8,
-    overflow: 'hidden',
-  },
-  headerRow: {
-    flexDirection: 'row',
-    backgroundColor: '#e3f2fd',
-    borderBottomWidth: 2,
-    borderBottomColor: '#ddd',
-  },
-  headerCell: {
-    flex: 1,
-    paddingVertical: 12,
-    paddingHorizontal: 8,
-    textAlign: 'center',
-    fontWeight: 'bold',
-    fontSize: 16,
-    borderRightWidth: 1,
-    borderRightColor: '#ddd',
-  },
-  firstColumn: {
-    width: 200, // More space for exercise names
-    backgroundColor: '#bbdefb',
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingVertical: 12,
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    borderRightWidth: 2,
-    borderRightColor: '#ddd',
-  },
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
-  },
-  exerciseCell: {
-    width: 200, // Align exercise names properly
-    paddingVertical: 12,
-    paddingHorizontal: 10,
-    backgroundColor: '#bbdefb',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRightWidth: 2,
-    borderRightColor: '#ddd',
-  },
-  exerciseOrder: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#555',
-  },
-  exerciseText: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  input: {
-    flex: 1,
-    textAlign: 'center',
-    padding: 8,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 4,
-    backgroundColor: '#fff',
-  },
-  footer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 16,
-  },
-  saveButton: {
-    backgroundColor: '#28A745',
-    padding: 14,
-    borderRadius: 8,
-    width: '48%',
-  },
-  saveButtonText: {
-    color: '#fff',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: 16,
-  },
-  startButton: {
-    backgroundColor: '#0056A6',
-    padding: 14,
-    borderRadius: 8,
-    width: '48%',
-  },
-  startButtonText: {
-    color: '#fff',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    fontSize: 16,
-  },
+  container: { flex: 1, padding: 16, backgroundColor: '#FFFFFF' },
+  logo: { width: 150, height: 80, resizeMode: 'contain', marginBottom: 20, alignSelf: 'center' },
+  header: { fontSize: 24, fontWeight: 'bold', textAlign: 'center', color: '#3274ba', marginBottom: 16 },
+  inputContainer: { flexDirection: 'row', alignItems: 'center', marginBottom: 16 },
+  input: { flex: 1, padding: 10, borderWidth: 1, borderColor: '#8ebce6', borderRadius: 8, backgroundColor: '#f8f8f8', color: '#1A1A1A' },
+  addButton: { marginLeft: 8, backgroundColor: '#f7bf0b', paddingVertical: 10, paddingHorizontal: 16, borderRadius: 8 },
+  buttonText: { color: '#1A1A1A', fontWeight: 'bold', fontSize: 16 },
+  headerRow: { flexDirection: 'row', backgroundColor: '#3274ba' },
+  headerCell: { flex: 1, paddingVertical: 12, paddingHorizontal: 8, textAlign: 'center', fontWeight: 'bold', fontSize: 16, color: '#fff' },
+  row: { flexDirection: 'row', alignItems: 'center', borderBottomWidth: 1, borderBottomColor: '#ddd' },
+  exerciseCell: { width: 200, paddingVertical: 12, paddingHorizontal: 10, backgroundColor: '#8ebce6' },
+  exerciseText: { fontSize: 16, fontWeight: 'bold', textAlign: 'center' },
+  footer: { flexDirection: 'row', justifyContent: 'space-between', marginTop: 16 },
+  saveButton: { backgroundColor: '#f7bf0b', padding: 14, borderRadius: 8, width: '48%', alignItems: 'center' },
+  startButton: { backgroundColor: '#3274ba', padding: 14, borderRadius: 8, width: '48%', alignItems: 'center' },
 });
+

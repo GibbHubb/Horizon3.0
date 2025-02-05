@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { io } from 'socket.io-client';
 
-const socket = io('http://192.168.1.100:3000'); // Local network for trainer connection
+//const socket = io('http://192.168.1.100:3000'); // Local network for trainer connection
 
 const initialWorkoutData = [
     { exercise: 'Push Up', participants: { Wendy: 10, Michael: 15, Elizabeth: 20 } },

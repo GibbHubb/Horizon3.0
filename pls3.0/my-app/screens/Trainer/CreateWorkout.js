@@ -7,10 +7,13 @@ import {
   StyleSheet,
   ScrollView,
   Alert,
+  Image,
 } from 'react-native';
 import { fetchExercises, createGroupWorkout } from '../../utils/api';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Picker } from '@react-native-picker/picker';
+
+const logo = require('../../imgs/Horizon.png'); // Ensure correct path
 
 export default function CreateWorkout({ navigation }) {
   const [workoutName, setWorkoutName] = useState('');
@@ -20,7 +23,7 @@ export default function CreateWorkout({ navigation }) {
     { exercise_id: null, name: '', repRange: '', sets: '', rir: '' },
   ]);
   const [loading, setLoading] = useState(true);
-  const [searchResults, setSearchResults] = useState([]); // Store filtered exercises for search
+  const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
     const loadExercises = async () => {
@@ -28,7 +31,6 @@ export default function CreateWorkout({ navigation }) {
         const fetchedExercises = await fetchExercises();
         setExerciseOptions(fetchedExercises);
       } catch (error) {
-        console.error('Error fetching exercises:', error.message);
         Alert.alert('Error', 'Failed to fetch exercises.');
       } finally {
         setLoading(false);
@@ -66,14 +68,13 @@ export default function CreateWorkout({ navigation }) {
       const updatedExercises = [...prevExercises];
       updatedExercises[index] = {
         ...updatedExercises[index],
-        name: selectedExercise.name, // ✅ Set exercise name
-        exercise_id: selectedExercise.exercise_id, // ✅ Set exercise ID
+        name: selectedExercise.name,
+        exercise_id: selectedExercise.exercise_id,
       };
       return updatedExercises;
     });
-    setSearchResults([]); // ✅ Hide dropdown after selection
+    setSearchResults([]);
   };
-  
 
   const handleSubmit = async () => {
     if (!workoutName.trim()) {
@@ -95,35 +96,30 @@ export default function CreateWorkout({ navigation }) {
 
       const payload = {
         name: workoutName,
-        difficulty: difficulty,
+        difficulty,
         trainer_id: parseInt(trainerId, 10),
         date: new Date().toISOString(),
         exercises: exercises.map((exercise) => ({
           exercise_id: exercise.exercise_id,
           reps: exercise.repRange,
           sets: parseInt(exercise.sets, 10) || 0,
-          weight: 0, // Backend requires weight, replacing RIR for now
+          weight: 0,
         })),
         participants: [],
       };
 
-      console.log('🚀 Sending payload:', JSON.stringify(payload, null, 2));
-
       const response = await createGroupWorkout(payload);
-      console.log('✅ Response from backend:', response);
 
       if (!response || !response.groupWorkout || !response.groupWorkout.group_workout_id) {
-        throw new Error('Invalid response structure from backend');
+        throw new Error('Invalid response from backend');
       }
 
       Alert.alert('Success', 'Workout created successfully!');
-
       navigation.replace('EditWorkout', {
         workoutId: response.groupWorkout.group_workout_id,
         workoutDetails: response.groupWorkout,
       });
     } catch (error) {
-      console.error('❌ Error saving workout:', error.message);
       Alert.alert('Error', `Failed to create workout. ${error.message}`);
     }
   };
@@ -137,41 +133,49 @@ export default function CreateWorkout({ navigation }) {
   }
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={{ flexGrow: 1 }} showsVerticalScrollIndicator={false}>
+    <ScrollView style={styles.container} contentContainerStyle={{ flexGrow: 1 }}>
+      {/* Horizon Logo */}
+      <Image source={logo} style={styles.logo} />
+
       {/* Back Button */}
       <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-        <Text style={styles.backButtonText}>Back</Text>
+        <Text style={styles.backButtonText}>← Back</Text>
       </TouchableOpacity>
 
       <Text style={styles.header}>Create Workout</Text>
 
-      <TextInput
-        style={styles.workoutNameInput}
-        placeholder="Workout Name"
-        value={workoutName}
-        onChangeText={setWorkoutName}
-      />
+      <TextInput style={styles.input} placeholder="Workout Name" value={workoutName} onChangeText={setWorkoutName} />
 
       {/* Difficulty Selector */}
-      <View style={styles.pickerContainer}>
-        <Text style={styles.label}>Difficulty Level:</Text>
-        <Picker selectedValue={difficulty} onValueChange={(itemValue) => setDifficulty(itemValue)} style={styles.picker}>
-          <Picker.Item label="Novice" value="Novice" />
-          <Picker.Item label="Beginner" value="Beginner" />
-          <Picker.Item label="Intermediate" value="Intermediate" />
-          <Picker.Item label="Advanced" value="Advanced" />
-        </Picker>
-      </View>
+      <View style={styles.difficultyContainer}>
+  <Text style={styles.label}>Difficulty Level:</Text>
+  <View style={styles.difficultyOptions}>
+    {['Novice', 'Beginner', 'Intermediate', 'Advanced'].map((level) => (
+      <TouchableOpacity
+        key={level}
+        style={[
+          styles.difficultyButton,
+          difficulty === level && styles.difficultySelected, // Highlight selected level
+        ]}
+        onPress={() => setDifficulty(level)}
+      >
+        <Text
+          style={[
+            styles.difficultyText,
+            difficulty === level && styles.difficultyTextSelected, // Change text color if selected
+          ]}
+        >
+          {level}
+        </Text>
+      </TouchableOpacity>
+    ))}
+  </View>
+</View>
+
 
       {exercises.map((exercise, index) => (
         <View key={index} style={styles.exerciseRow}>
-          {/* Exercise Search */}
-          <TextInput
-            style={styles.exerciseInput}
-            placeholder="Search Exercise"
-            value={exercise.name}
-            onChangeText={(text) => handleSearch(text, index)}
-          />
+          <TextInput style={styles.input} placeholder="Search Exercise" value={exercise.name} onChangeText={(text) => handleSearch(text, index)} />
           {searchResults.length > 0 && (
             <View style={styles.dropdownContainer}>
               {searchResults.map((option) => (
@@ -181,12 +185,9 @@ export default function CreateWorkout({ navigation }) {
               ))}
             </View>
           )}
+          <TextInput style={styles.input} placeholder="Rep Range" value={exercise.repRange} onChangeText={(text) => updateExercise(index, 'repRange', text)} />
+          <TextInput style={styles.input} placeholder="Sets" keyboardType="numeric" value={exercise.sets} onChangeText={(text) => updateExercise(index, 'sets', text)} />
 
-          {/* Inputs */}
-          <TextInput style={styles.exerciseInput} placeholder="Rep Range" value={exercise.repRange} onChangeText={(text) => updateExercise(index, 'repRange', text)} />
-          <TextInput style={styles.exerciseInput} placeholder="Sets" keyboardType="numeric" value={exercise.sets} onChangeText={(text) => updateExercise(index, 'sets', text)} />
-
-          {/* Remove Exercise Button */}
           <TouchableOpacity style={styles.removeButton} onPress={() => removeExercise(index)}>
             <Text style={styles.removeButtonText}>-</Text>
           </TouchableOpacity>
@@ -194,29 +195,112 @@ export default function CreateWorkout({ navigation }) {
       ))}
 
       <TouchableOpacity style={styles.addButton} onPress={addExercise}>
-        <Text style={styles.addButtonText}>Add Exercise</Text>
+        <Text style={styles.buttonText}>Add Exercise</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.saveButton} onPress={handleSubmit}>
-        <Text style={styles.saveButtonText}>Save Workout</Text>
+        <Text style={styles.buttonText}>Save Workout</Text>
       </TouchableOpacity>
     </ScrollView>
   );
 }
 
-// ✅ Styles remain consistent across the app
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 16, backgroundColor: '#f8f8f8' },
-  header: { fontSize: 24, fontWeight: 'bold', textAlign: 'center', marginBottom: 16 },
-  workoutNameInput: { borderWidth: 1, borderColor: '#ccc', borderRadius: 8, padding: 10, marginBottom: 16 },
-  backButton: { backgroundColor: '#FF6B6B', padding: 10, borderRadius: 8, marginBottom: 16 },
-  backButtonText: { color: '#fff', fontWeight: 'bold', textAlign: 'center' },
-  pickerContainer: { marginBottom: 16 },
-  exerciseRow: { marginBottom: 16 },
-  exerciseInput: { borderWidth: 1, borderColor: '#ccc', borderRadius: 8, padding: 8, marginBottom: 4 },
-  removeButton: { backgroundColor: '#FF6B6B', padding: 8, borderRadius: 8, marginTop: 8 },
-  removeButtonText: { color: '#fff', fontWeight: 'bold' },
-  saveButton: { backgroundColor: '#28A745', padding: 16, borderRadius: 8, marginTop: 16, alignItems: 'center' },
-  saveButtonText: { color: '#fff', fontWeight: 'bold' },
-});
+  container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: '#FFFFFF', // White background for clarity
+  },
+  logo: {
+    width: 150,
+    height: 80,
+    resizeMode: 'contain',
+    marginBottom: 20,
+    alignSelf: 'center',
+  },
+  backButton: {
+    position: 'absolute',
+    top: 20,
+    left: 20,
+    backgroundColor: '#f7bf0b', // Horizon Gold
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+    borderRadius: 8,
+  },
+  backButtonText: {
+    color: '#1A1A1A',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  header: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#3274ba', // Horizon Blauw
+    marginBottom: 16,
+  },
+  input: {
+    borderWidth: 1,
+    padding: 12,
+    borderRadius: 8,
+    marginBottom: 10,
+    backgroundColor: '#f8f8f8', // Light Grey Background for contrast
+    borderColor: '#8ebce6', // Horizon Light Blue
+    color: '#1A1A1A',
+    fontSize: 16,
+  },
+  label: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#1A1A1A',
+    marginBottom: 5,
+  },
+  difficultyContainer: {
+    marginBottom: 15,
+    width: '100%',
+  },
+  difficultyOptions: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 5,
+  },
+  difficultyButton: {
+    flex: 1,
+    padding: 12,
+    marginHorizontal: 5,
+    backgroundColor: '#f8f8f8',
+    borderRadius: 8,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#8ebce6', // Horizon Light Blue
+  },
+  difficultySelected: {
+    backgroundColor: '#3274ba', // Horizon Blauw
+  },
+  difficultyText: {
+    fontSize: 16,
+    color: '#1A1A1A',
+  },
+  difficultyTextSelected: {
+    color: '#fff', // White text for selected button
+  },
+  buttonText: {
+    color: '#1A1A1A',
+    fontSize: 18,
+  },
+  saveButton: {
+    backgroundColor: '#f7bf0b', // Horizon Gold
+    padding: 15,
+    borderRadius: 8,
+    alignItems: 'center',
+    width: '90%',
+    alignSelf: 'center',
+    marginTop: 20,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 3, // Adds a subtle depth effect
+  },
 
+  
+});

@@ -1,39 +1,55 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   View,
   Text,
-  Button,
   StyleSheet,
   TouchableOpacity,
+  Image,
   Alert,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+const logo = require('../../imgs/Horizon.png'); // Adjust path if needed
+
 const ClientHome = ({ navigation }) => {
+  const handleLogout = async () => {
+    try {
+      await AsyncStorage.clear();
+      Alert.alert('Logged Out', 'You have been logged out.');
+      navigation.replace('Login'); // Redirect to login
+    } catch (error) {
+      Alert.alert('Error', 'Failed to log out.');
+    }
+  };
 
-
-
-
-  // Returning Client - Show Main Home Screen
   return (
     <View style={styles.container}>
+      {/* Logout Button - Top Right */}
+      <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
+        <Text style={styles.logoutButtonText}>🚪 Logout</Text>
+      </TouchableOpacity>
+
+      {/* Horizon Logo */}
+      <Image source={logo} style={styles.logo} />
+
       <Text style={styles.title}>Welcome Back!</Text>
-      <Button
-        title="Intake"
-        onPress={() => navigation.navigate('IntakeScreen')}
-      />      
-      <Button
-      title="Lifestyle"
-      onPress={() => navigation.navigate('LifestyleScreen')}
-    />
-      <Button
-        title="Training"
-        onPress={() => navigation.navigate('TrainingScreen')}
-      />
-      <Button
-        title="Progress"
-        onPress={() => navigation.navigate('ProgressScreen')}
-      />
+
+      {/* Styled Buttons */}
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('IntakeScreen')}>
+        <Text style={styles.buttonText}>📋 Intake</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('LifestyleScreen')}>
+        <Text style={styles.buttonText}>🌿 Lifestyle</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('TrainingScreen')}>
+        <Text style={styles.buttonText}>💪 Training</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('ProgressScreen')}>
+        <Text style={styles.buttonText}>📊 Progress</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -44,38 +60,51 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#FFFFFF',
   },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f5f5f5',
+  logoutButton: {
+    position: 'absolute',
+    top: 20,
+    right: 20,
+    backgroundColor: '#fc6e4c', // Horizon Orange
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 2,
+    zIndex: 10, // Ensure it's above other content
   },
-  loadingText: {
-    fontSize: 18,
-    color: '#666',
+  logoutButtonText: { color: '#fff', fontWeight: 'bold', fontSize: 16 },
+
+  logo: {
+    width: 160,
+    height: 90,
+    resizeMode: 'contain',
+    marginBottom: 25,
   },
   title: {
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  subtitle: {
-    fontSize: 16,
-    textAlign: 'center',
+    color: '#3274ba', // Horizon Blauw
     marginBottom: 20,
   },
-  intakeButton: {
-    backgroundColor: '#28A745',
-    padding: 12,
+  button: {
+    width: '80%',
+    padding: 15,
+    backgroundColor: '#f7bf0b', // Horizon Gold
     borderRadius: 8,
     alignItems: 'center',
-    marginTop: 16,
+    marginTop: 15,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 6,
+    elevation: 4,
   },
-  intakeButtonText: {
-    color: '#fff',
-    fontSize: 16,
+  buttonText: {
+    color: '#1A1A1A',
+    fontSize: 18,
     fontWeight: 'bold',
   },
 });

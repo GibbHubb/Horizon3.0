@@ -7,9 +7,12 @@ import {
   StyleSheet,
   Alert,
   ActivityIndicator,
+  ImageBackground,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { loginUser } from '../utils/api';
+
+const backgroundImage = require('../imgs/BG.png'); // Ensure the correct path
 
 export default function LoginScreen({ navigation }) {
   const [username, setUsername] = useState('');
@@ -25,106 +28,112 @@ export default function LoginScreen({ navigation }) {
     setLoading(true);
   
     try {
-      console.log('Attempting login...');
+      console.log('📡 Logging in...');
       const response = await loginUser(username, password);
-      console.log('Login response:', response);
-  
       const { token, refreshToken, user } = response;
   
-      // Save tokens and user role
+      console.log(`✅ Received login token: ${token}`);
+      console.log(`👤 User role: ${user.role}`);
+      console.log(`🆔 User ID: ${user.user_id}`);  // Log user ID
+  
+      // Store tokens & user ID
       await AsyncStorage.setItem('authToken', token);
-      console.log('authToken saved:', token);
-  
-      await AsyncStorage.setItem('refreshToken', refreshToken);
-      console.log('refreshToken saved:', refreshToken);
-  
+      await AsyncStorage.setItem('refreshToken', refreshToken || '');
       await AsyncStorage.setItem('userRole', user.role);
-      console.log('userRole saved:', user.role);
+      await AsyncStorage.setItem('user_id', user.user_id.toString());  // 🔥 Store user_id separately
   
-      // Navigate based on role
+      console.log('🔐 Tokens & User ID stored, navigating to home');
+  
       if (user.role === 'client' || user.role === 'user') {
-        console.log('Navigating to ClientHome');
         navigation.replace('ClientHome');
       } else if (user.role === 'pt' || user.role === 'masterPt') {
-        console.log('Navigating to TrainerHome');
         navigation.replace('TrainerHome');
       } else {
-        console.log('Invalid user role:', user.role);
         Alert.alert('Error', 'Invalid user role.');
       }
     } catch (error) {
-      console.error('Error during login:', error.message);
+      console.error('❌ Login error:', error.response?.data || error.message);
       Alert.alert('Login Failed', error.response?.data?.message || 'An error occurred. Please try again.');
     } finally {
       setLoading(false);
     }
   };
-
+  
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Login to Horizon!</Text>
+    <ImageBackground source={backgroundImage} style={styles.background} resizeMode="cover">
+      <View style={styles.overlay}>
+        <Text style={styles.header}>Login to Horizon</Text>
 
-      <TextInput
-        style={styles.input}
-        placeholder="Username"
-        value={username}
-        onChangeText={setUsername}
-        autoCapitalize="none"
-        autoCorrect={false}
-      />
+        <TextInput
+          style={styles.input}
+          placeholder="Username"
+          placeholderTextColor="#ddd"
+          value={username}
+          onChangeText={setUsername}
+          autoCapitalize="none"
+          autoCorrect={false}
+        />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-      />
+        <TextInput
+          style={styles.input}
+          placeholder="Password"
+          placeholderTextColor="#ddd"
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+        />
 
-      {loading ? (
-        <ActivityIndicator size="large" color="#0056A6" />
-      ) : (
-        <TouchableOpacity style={styles.button} onPress={handleLogin}>
-          <Text style={styles.buttonText}>Login</Text>
-        </TouchableOpacity>
-      )}
-    </View>
+        {loading ? (
+          <ActivityIndicator size="large" color="#F6B000" />
+        ) : (
+          <TouchableOpacity style={styles.button} onPress={handleLogin}>
+            <Text style={styles.buttonText}>Login</Text>
+          </TouchableOpacity>
+        )}
+      </View>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  background: {
+    flex: 1, // Ensures full height and width
+    width: '100%',
+    height: '100%',
+  },
+  overlay: {
     flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Dark overlay for readability
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
-    backgroundColor: '#f8f8f8',
   },
   header: {
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: 'bold',
     marginBottom: 24,
-    color: '#0056A6',
+    color: '#F6B000', // Horizon Gold
   },
   input: {
-    width: '100%',
+    width: '90%',
     padding: 12,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: 'rgba(255, 255, 255, 0.3)',
     borderRadius: 8,
     marginBottom: 16,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(255, 255, 255, 0.1)', // Transparent input field
+    color: '#fff',
   },
   button: {
-    width: '100%',
+    width: '90%',
     padding: 16,
-    backgroundColor: '#0056A6',
+    backgroundColor: '#F6B000',
     borderRadius: 8,
     alignItems: 'center',
   },
   buttonText: {
-    color: '#fff',
+    color: '#1A1A1A',
     fontWeight: 'bold',
     fontSize: 16,
   },

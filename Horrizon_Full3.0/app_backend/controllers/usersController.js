@@ -98,21 +98,9 @@ const createUser = async (req, res) => {
 };
 
 // Fetch All Users
-// Fetch Users with Pagination, Sorting, and Search
 const getUsers = async (req, res) => {
-  const { page = 1, limit = 20, search = '' } = req.query; // Extract query parameters
-  const offset = (page - 1) * limit;
-
   try {
-    let query = `
-    SELECT user_id, username, role
-    FROM Users 
-    WHERE username ILIKE $1
-    ORDER BY user_id DESC 
-    LIMIT $2 OFFSET $3
-  `;
-    const { rows } = await db.query(query, [`%${search}%`, limit, offset]);
-
+    const { rows } = await db.query('SELECT user_id, username, role FROM Users');
     res.status(200).json(rows);
   } catch (err) {
     console.error('Error fetching users:', err.message);
@@ -120,19 +108,17 @@ const getUsers = async (req, res) => {
   }
 };
 
-
 // Fetch User Profile
 const getUserProfile = async (req, res) => {
   try {
-    const { user_id } = req.params; // Make sure we get user_id from params
-    console.log('Fetching profile for user ID:', user_id);
+    const { user_id } = req.user;
 
     const { rows } = await db.query(
-      'SELECT user_id, username, age, progress FROM Users WHERE user_id = $1',
+      'SELECT user_id, username, role FROM Users WHERE user_id = $1',
       [user_id]
     );
 
-    if (!rows.length) {
+    if (!rows?.length) {
       return res.status(404).json({ message: 'User not found' });
     }
 
@@ -142,8 +128,6 @@ const getUserProfile = async (req, res) => {
     res.status(500).json({ message: 'Internal server error' });
   }
 };
-
-
 
 // Middleware for Authentication
 

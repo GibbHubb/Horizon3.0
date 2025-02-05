@@ -1,11 +1,14 @@
 const express = require('express');
-const app = express();
-const intakeRoutes = require('./routes/intakeRoutes');
+const {
+    getIntakeData,
+    addIntakeData,
+} = require('../controllers/IntakeController');
+const { authenticateToken } = require('../controllers/usersController');
 
-app.use(express.json());
+const router = express.Router();
 
-// Use intake routes
-app.use('/intake', intakeRoutes);
+// Routes for Intake Data
+router.get('/:user_id', authenticateToken, getIntakeData); // Fetch intake data for a specific user
+router.post('/', authenticateToken, addIntakeData); // Add new intake data for a user
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+module.exports = router;

@@ -6,9 +6,12 @@ import {
   TouchableOpacity,
   FlatList,
   ActivityIndicator,
+  Image,
   StyleSheet,
 } from 'react-native';
 import { fetchUsers } from '../../utils/api'; // API call for users
+
+const logo = require('../../imgs/Horizon.png'); // Ensure correct path
 
 export default function ClientOverview({ navigation }) {
   const [users, setUsers] = useState([]);
@@ -46,21 +49,28 @@ export default function ClientOverview({ navigation }) {
 
   return (
     <View style={styles.container}>
+      {/* Horizon Logo */}
+      <Image source={logo} style={styles.logo} />
+
+      {/* Back Button (Top Right) */}
       <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-        <Text style={styles.backButtonText}>Back</Text>
+        <Text style={styles.backButtonText}>←</Text>
       </TouchableOpacity>
 
       <Text style={styles.header}>Client & Trainer Overview</Text>
 
+      {/* Search Bar */}
       <TextInput
         style={styles.searchInput}
         placeholder="Search users..."
+        placeholderTextColor="#555"
         value={searchQuery}
         onChangeText={handleSearch}
       />
 
+      {/* Loader or User List */}
       {loading && users.length === 0 ? (
-        <ActivityIndicator size="large" color="#0056A6" />
+        <ActivityIndicator size="large" color="#f6b000" />
       ) : (
         <FlatList
           data={users}
@@ -92,53 +102,71 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-    backgroundColor: '#f8f8f8',
+    alignItems: 'center',
+    backgroundColor: '#FFFFFF', // White background for clarity
   },
-  backButton: {
-    backgroundColor: '#FF6B6B',
-    padding: 10,
-    borderRadius: 8,
+  logo: {
+    width: 150,
+    height: 80,
+    resizeMode: 'contain',
+    marginTop: 20, // Adjusted spacing
     marginBottom: 10,
   },
+  backButton: {
+    position: 'absolute',
+    top: 20,
+    right: 20,
+    backgroundColor: '#f6b000', // Horizon Gold
+    padding: 10,
+    borderRadius: 8,
+  },
   backButtonText: {
-    color: '#fff',
+    color: '#1A1A1A',
     fontWeight: 'bold',
-    textAlign: 'center',
+    fontSize: 18,
   },
   header: {
     fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
+    color: '#3274ba', // Horizon Blue for contrast
     marginBottom: 16,
   },
   searchInput: {
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#8ebce6', // Horizon Light Blue
     borderRadius: 8,
-    padding: 10,
+    padding: 12,
+    width: '90%',
+    backgroundColor: '#f8f8f8',
+    color: '#333',
     marginBottom: 16,
   },
   userButton: {
     padding: 16,
-    backgroundColor: '#0056A6',
+    backgroundColor: '#f6b000', // Horizon Gold
     borderRadius: 8,
-    marginBottom: 8,
+    width: '90%',
     alignItems: 'center',
+    marginBottom: 8,
   },
   username: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: '#1A1A1A',
   },
   loadMoreButton: {
-    padding: 10,
-    backgroundColor: '#0056A6',
+    padding: 12,
+    backgroundColor: '#3274ba', // Horizon Blue
     alignItems: 'center',
     borderRadius: 8,
     marginVertical: 10,
+    width: '90%',
   },
   loadMoreText: {
     color: '#fff',
     fontWeight: 'bold',
+    fontSize: 16,
   },
 });
+
