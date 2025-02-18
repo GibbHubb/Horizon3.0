@@ -22,7 +22,7 @@ const getGroupWorkouts = async (req, res) => {
 
 // Fetch group workout details
 const getGroupWorkoutDetails = async (req, res) => {
-    const { id } = req.params;
+    const id = parseInt(req.params.id, 10); // ✅ Ensure `id` is an integer
 
     if (isNaN(id)) {
         return res.status(400).json({ message: 'Invalid group workout ID: must be a number.' });
@@ -40,37 +40,49 @@ const getGroupWorkoutDetails = async (req, res) => {
         if (!workoutRows.length) {
             return res.status(404).json({ message: 'Group workout not found.' });
         }
-
         const groupWorkout = workoutRows[0];
 
-        // Fetch exercises linked to the group workout
+        // Fetch exercises with reps
         const exercisesQuery = `
-            SELECT gwe.*, e.name AS exercise_name 
+            SELECT gwe.exercise_id, gwe.reps, e.name AS exercise_name
             FROM group_workout_exercises gwe
             JOIN exercises e ON gwe.exercise_id = e.exercise_id
             WHERE gwe.group_workout_id = $1
         `;
-        const { rows: exerciseRows } = await db.query(exercisesQuery, [id]);
+        const { rows: exerciseRows } = await db.query(exercisesQuery, [id]); // ✅ Pass [id] correctly
 
-        // Fetch participants linked to the group workout
+        // Fetch participants with reps
         const participantsQuery = `
-            SELECT gwp.*, u.username AS participant_name 
+            SELECT 
+                gwp.user_id, u.username AS participant_name, 
+                gwe.exercise_id, gwe.reps
             FROM group_workout_participants gwp
             JOIN users u ON gwp.user_id = u.user_id
+            JOIN group_workout_exercises gwe ON gwp.group_workout_id = gwe.group_workout_id
             WHERE gwp.group_workout_id = $1
         `;
-        const { rows: participantRows } = await db.query(participantsQuery, [id]);
+        const { rows: participantRows } = await db.query(participantsQuery, [id]); // ✅ Pass [id] correctly
+
+        // Format participants to include reps per exercise
+        const participantsMap = {};
+        participantRows.forEach(({ user_id, participant_name, exercise_id, reps }) => {
+            if (!participantsMap[user_id]) {
+                participantsMap[user_id] = { user_id, participant_name, exercises: [] };
+            }
+            participantsMap[user_id].exercises.push({ exercise_id, reps });
+        });
 
         res.status(200).json({
             groupWorkout,
             exercises: exerciseRows,
-            participants: participantRows,
+            participants: Object.values(participantsMap),
         });
     } catch (err) {
-        console.error('Error fetching group workout details:', err.message);
+        console.error('❌ Error fetching group workout details:', err.message);
         res.status(500).json({ message: 'Internal server error.', details: err.message });
     }
 };
+
 
 // Create a new group workout
 const createGroupWorkout = async (req, res) => {
@@ -290,6 +302,62 @@ const searchWorkouts = async (req, res) => {
     }
 };
 
+const editGroupWorkout = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { name, trainer_id, date, notes, level, duration, expected_sets, expected_reps, expected_weight } = req.body;
+
+        // Create a new version of the workout
+        const editedWorkout = await db.query(
+            `INSERT INTO group_workouts (name, trainer_id, date, notes, level, duration, parent_workout_id)
+             VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *`,
+            [name, trainer_id, date, notes, level, duration, id]
+        );
+
+        const newGroupWorkoutId = editedWorkout.rows[0].group_workout_id;
+
+        // Update user_workouts to link to the new group workout
+        await db.query(
+            `UPDATE user_workouts 
+             SET workout_id = $1 
+             WHERE group_workout_id = $2`,
+            [newGroupWorkoutId, id]
+        );
+
+        res.status(201).json({ success: true, workout: editedWorkout.rows[0] });
+    } catch (err) {
+        console.error('Error editing group workout:', err.message);
+        res.status(500).json({ message: 'Internal server error.', details: err.message });
+    }
+};
+
+const finishGroupWorkout = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { user_id, actual_sets, actual_reps, actual_weight } = req.body;
+
+        // Update user_workouts with actual performance
+        await db.query(
+            `UPDATE user_workouts 
+             SET actual_sets = $1, actual_reps = $2, actual_weight = $3, status = 'completed', completed_at = NOW()
+             WHERE user_id = $4 AND group_workout_id = $5`,
+            [actual_sets, actual_reps, actual_weight, user_id, id]
+        );
+
+        // Insert into completed_group_workouts
+        const finishedWorkout = await db.query(
+            `INSERT INTO completed_group_workouts (group_workout_id, user_id, actual_sets, actual_reps, actual_weight)
+             VALUES ($1, $2, $3, $4, $5) RETURNING *`,
+            [id, user_id, actual_sets, actual_reps, actual_weight]
+        );
+
+        res.status(200).json({ success: true, completedWorkout: finishedWorkout.rows[0] });
+    } catch (err) {
+        console.error('Error finishing group workout:', err.message);
+        res.status(500).json({ message: 'Internal server error.', details: err.message });
+    }
+};
+
 
 
 
@@ -302,5 +370,8 @@ module.exports = {
     getLast10Workouts,
     getMostUsedWorkouts,
     getYourWorkouts,
-    searchWorkouts
+    searchWorkouts,
+    editGroupWorkout,
+    finishGroupWorkout
+
 };
